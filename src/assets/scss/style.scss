@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    color: #FFF;
+    font-family: Montserrat, Tahoma, sans-serif;
+}
+
+.header_wrapper {
+    background-image: url(../images/dan-otis-OYFHT4X5isg-unsplash.png);
+    height: 931px;
+}
+
+.header {
+    margin: auto;
+    max-width: 1216px;
+
+    &_prolog {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 51px;
+
+        .callback-order a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .socials {
+            display: flex;
+
+            .socials_links {
+                display: flex;
+
+                &_item {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
