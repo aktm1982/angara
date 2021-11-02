@@ -10,35 +10,160 @@ body {
     font-family: Montserrat, Tahoma, sans-serif;
 }
 
-.header_wrapper {
-    background-image: url(../images/dan-otis-OYFHT4X5isg-unsplash.png);
-    height: 931px;
+.container {
+    margin: auto;
+    max-width: 1213px;
+}
+
+.button_transparent {
+    padding: 0 7px 0 7px;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: Montserrat, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #FFF;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.filled_blue {
+    color: #4975A5;
+    font-size: 72px;
 }
 
 .header {
-    margin: auto;
-    max-width: 1216px;
+    background-image: url('../images/dan-otis-OYFHT4X5isg-unsplash(2) 1.png');
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+    height: 918px;     
 
     &_prolog {
         display: flex;
         justify-content: space-between;
-        padding-top: 51px;
+        padding-top: 54px;
+        padding-bottom: 136px;
+        font-size: 16px;
+        font-family: Montserrat, Tahoma, sans-serif;
+        color: #FFF;
+
+        .logo img {
+            width: 253px;
+        }
 
         .callback-order a {
+            font-size: 16px;
             color: #FFF;
             text-decoration: none;
         }
 
-        .socials {
+        .contacts {
             display: flex;
+            padding-top: 18px;
 
-            .socials_links {
+            .callback-order a {
+                color: #FFF;
+                text-decoration: none;
+            }
+
+            .social-icons {
                 display: flex;
+                justify-content: space-between;
+                margin: 0 33px 0 33px;
+                width: 140px;
+            }
+        }
 
-                &_item {
-                    margin-left: 15px;
+        .search {
+            position: relative;
+            top: -4px;
+
+            &_text {
+                width: 235px;
+                background: none;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #FFF;
+                padding-bottom: 4px;
+                font-family: Montserrat, Tahoma, sans-serif;
+                font-size: 16px;
+                line-height: 19.5px;
+                color: #FFF;
+
+                &::placeholder {
+                    color: #FFF;
                 }
             }
+
+            &_button {
+                transform: translate(-26px, 4px);
+            }
+        }   
+    }
+
+    &_content {
+        position: relative;
+        width: 100%;
+        text-transform: uppercase;
+
+        .company-name {
+            position: absolute;
+            top: 185px;
+            left: -214px;
+            transform: rotate(-90deg);
+            width: 657px;
+            text-align: right;
+
+            h1 {
+                font-size: 124px;
+                font-weight: 700;
+                line-height: 142px;
+            }
+        }
+
+        .company-description {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            width: 701px;
+
+            h2 {
+                font-size: 85px;
+                font-weight: 700;
+                line-height: 80px;
+            }
+
+            .activity {
+                padding-top: 26px;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    font-family: Akrobat, Arial, sans-serif;
+                    font-size: 23px;
+                    font-weight: 600;
+    
+                    &:not(:last-child):after {
+                        content: " \00a0·";
+                    }
+                }
+            }
+        }
+
+        .slide-index {
+            padding-top: 96px;
+            font-size: 237px;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 2px #FFF;
+            text-align: right;
         }
     }
 }
