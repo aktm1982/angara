@@ -1,3 +1,6 @@
+$corp_blue-color: #4975A5;
+$corp_gray-color: #454545;
+
 * {
     margin: 0;
     padding: 0;
@@ -29,22 +32,35 @@ body {
     }
 }
 
-.filled_blue {
-    color: #4975A5;
-    font-size: 72px;
+.slider-control {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .slide-index {
+        font-size: 237px;
+        line-height: 182px;
+        font-weight: 800;
+        color: transparent;
+        -webkit-text-stroke: 2px #FFF;
+        text-align: right;
+    }
+
+    &_item {
+        padding-left: 40px;
+    }
 }
 
 .header {
     background-image: url('../images/dan-otis-OYFHT4X5isg-unsplash(2) 1.png');
-    mix-blend-mode: multiply;
-    opacity: 0.4;
+    background-size: cover;
     height: 918px;     
 
     &_prolog {
         display: flex;
         justify-content: space-between;
         padding-top: 54px;
-        padding-bottom: 136px;
+        padding-bottom: 116px;
         font-size: 16px;
         font-family: Montserrat, Tahoma, sans-serif;
         color: #FFF;
@@ -61,7 +77,8 @@ body {
 
         .contacts {
             display: flex;
-            padding-top: 18px;
+            align-items: flex-end;
+            transform: translate(0, -32px);
 
             .callback-order a {
                 color: #FFF;
@@ -101,6 +118,11 @@ body {
                 transform: translate(-26px, 4px);
             }
         }   
+
+        .menu button {
+            font-size: 32px;
+            line-height: 14px;
+        }
     }
 
     &_content {
@@ -118,7 +140,7 @@ body {
 
             h1 {
                 font-size: 124px;
-                font-weight: 700;
+                font-weight: bold;
                 line-height: 142px;
             }
         }
@@ -133,6 +155,11 @@ body {
                 font-size: 85px;
                 font-weight: 700;
                 line-height: 80px;
+
+                .filled_blue {
+                    color: $corp_blue-color;
+                    font-size: 72px;
+                }
             }
 
             .activity {
@@ -144,27 +171,207 @@ body {
                 }
 
                 li {
-                    display: inline-block;
+                    display: inline;
                     list-style: none;
                     font-family: Akrobat, Arial, sans-serif;
                     font-size: 23px;
                     font-weight: 600;
     
                     &:not(:last-child):after {
-                        content: " \00a0·";
+                        content: " \00a0•";
                     }
                 }
             }
         }
 
-        .slide-index {
-            padding-top: 96px;
-            font-size: 237px;
-            font-weight: bold;
-            color: transparent;
-            -webkit-text-stroke: 2px #FFF;
-            text-align: right;
+        .slider-control {
+            padding-top: 170px;
         }
     }
 }
 
+.specs {
+    background-color: $corp_gray-color;
+    height: 310px;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 866px;
+        padding-top: 80px;
+
+        h3 {
+            font-size: 92px;
+            font-weight: 700;
+            line-height: 112px;
+            letter-spacing: 0em;
+            text-align: left;
+    
+            .font_tiny {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29px;
+                letter-spacing: 0.1em;
+                text-align: left;
+            }
+        }
+    }
+
+    &_label {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.about {
+    height: 722px;
+
+    &_content {
+        display: flex;
+        padding: 96px 0;
+
+        img {
+            max-width: 530px;
+        }
+    
+        .text {
+            padding-left: 62px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 65px;
+                line-height: 142px;
+                text-transform: uppercase;
+                color: $corp_gray-color;
+            }
+    
+            p {
+                color: #7A7A7A;
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            .schema {
+                display: flex;
+                padding-top: 18px;
+                color: #7A7A7A;
+                font-size: 20px;
+                line-height: 50.2px;
+            }
+
+            .marker {
+                transform: translate(0, 3px);
+            }
+        }
+    }
+}
+
+.history {
+    background-image: url('../images/image\ 9.jpg');
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 778px;
+
+    &_content {
+        position: relative;
+        width: 100%;
+        text-transform: uppercase;
+
+        .block-title {
+            position: absolute;
+            top: 452px;                
+            left: -400px;
+            width: 890px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 47px;
+                text-align: right;
+                transform: rotate(-90deg);
+            }
+        }
+
+        .starting-date {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 484px;
+            padding-top: 83px;
+            text-align: right;
+
+            h2 {
+                font-weight: bold;
+                font-size: 71px;
+                line-height: 82px;
+
+                .filled_blue {
+                    color: $corp_blue-color;
+                    text-shadow: 0px 4px 10px rgba(8, 18, 31, 0.9);
+                }
+            }
+        }
+
+        .slider-control {
+            padding-top: 94px;
+        }
+    }
+
+    &_menu {
+        position: relative;
+        top: 588px;
+
+        li {
+            display: inline-block;
+            padding-left: 17px;
+            padding-bottom: 21px;
+            list-style-type: none;
+            border-top: 2px solid #FFF;
+            width: 25%;
+
+            &:not(:last-child) {
+                border-right: 2px solid #FFF;
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.35);
+            }
+            
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #FFF;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 102px;
+            }
+        }
+    }
+}
+
+.location {
+    background-color: #34517B;
+    height: 1075px;
+    padding-top: 110px;
+
+    &_content {
+        background-image: url('../images/buklet.jpg');
+        background-size: cover;
+        height: 919px;
+
+        .title {
+            width: 365px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 65px;
+                line-height: 80px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
