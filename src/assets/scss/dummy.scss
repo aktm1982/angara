@@ -1,0 +1,347 @@
+.header_dummy {
+    height: 1080px;
+
+    .header_content {
+        .company-name {
+            left: -221px;
+    
+            h1 {
+                font-size: 143px;
+            }
+        }
+    
+        .dummy_content {
+            position: absolute;
+            top: -14px;
+            right: 0;
+            width: 706px;
+        
+            h2 {
+                font-weight: bold;
+                font-size: 70px;
+                line-height: 78px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+        
+                .filled_blue {
+                    font-size: 72px;
+                    color: #4975A5;
+                }
+            }
+        
+            .dummy_callback_label {
+                padding-top: 23px;
+                font-family: Akrobat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 47px;
+                line-height: 57px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        
+            .callback {
+                padding-top: 39px;
+                &_form {
+        
+                    .input_block {
+                        padding-bottom: 34px;
+        
+                        label {
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-transform: none;
+                            color: #FFFFFF;
+                        }
+            
+                        input {
+                            width: 85%;
+                            color: #FFFFFF;
+
+                            &::placeholder {
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+
+                    button {
+                        margin-top: 30px;
+                        width: 289px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+.local-jobs {
+    height: 1310px;
+    background: linear-gradient(90deg, #4975A5 60%, transparent 90%), 
+        url(../images/dummy/image2.jpg) top right/cover no-repeat;
+    color: #FFF;
+
+    &_content {
+        width: 832px;
+        padding-top: 104px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            text-transform: uppercase;
+            padding-bottom: 33px;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            padding-bottom: 89px;
+        }
+    }
+
+    &_list {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 925px;
+
+        table {
+            tr {
+                height: 124px;
+                vertical-align: top;
+            }
+        }
+
+        .marker-cell {
+            position: relative;
+
+            .marker {
+                position: absolute;
+                top: -6px;
+            }
+
+            .rect {
+                position: absolute;
+                top: 59px;
+                left: 32.5px;
+                width: 1px;
+                height: 100%;
+                background-color: #FFF;
+            }
+        }
+    }
+}
+
+.footer_dummy {
+    position: relative;
+    padding-top: 87px;
+    height: 614px;
+    overflow: hidden;
+
+    &_content {
+
+        h2 {
+            font-weight: bold;
+            font-size: 65px;
+            line-height: 142px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #454545;
+
+            .filled_blue {
+                color: #4975A5;
+            }
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+            color: #454545;
+        }
+
+        .order_button {
+            margin: auto;
+            margin-top: 92px;
+            max-width: 428px;
+        }
+
+        
+    }
+
+    .order_reflection {
+        position: absolute;
+        bottom: -22px;
+        font-weight: bold;
+        font-size: 95px;
+        text-transform: uppercase;
+        color: transparent;
+        opacity: 0.5;
+        -webkit-text-stroke: 1px #4975A5;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1203px) {
+
+    .header_dummy {
+        height: 921px;
+
+        .header_prolog {
+            padding-bottom: 86px;
+        }
+    
+        .header_content {
+            .company-name {
+                top: 270px;
+                left: -307px;
+        
+                h1 {
+                    font-size: 100px;
+                }
+            }
+        
+            .dummy_content {
+                top: -14px;
+                right: 0;
+                width: 565px;
+            
+                h2 {
+                    font-size: 56px;
+                    line-height: 71px;
+            
+                    .filled_blue {
+                        font-size: 60px;
+                    }
+                }
+            
+                .dummy_callback_label {
+                    padding-top: 23px;
+                    font-size: 39px;
+                    line-height: 52px;
+                }
+            }
+        }    
+    }
+
+    .local-jobs {
+        height: auto;
+        
+        &_content {
+            width: 100%;
+            padding-top: 84px;
+        }
+    
+        &_list {
+            width: 100%;
+        }
+    }
+
+    .footer_dummy {
+        height: 508px;
+        padding-top: 51px;
+    
+        &_content {
+    
+            h2 {
+                font-size: 50px;
+                line-height: 107px;
+            }
+    
+            h3 {
+                font-size: 21px;
+                line-height: 28px;
+            } 
+        }
+    
+        .order_reflection {
+            font-size: 69px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+
+    .header_dummy {
+
+        .header_prolog {
+            padding-bottom: 83px;
+
+            .logo {
+                padding-top: 5px;
+
+                img {
+                    width: 163px;
+                }
+            }
+
+            .company-description {
+                .activity {
+                    padding-top: 0;
+                }
+            }
+        }
+    
+        .header_content {
+            .company-name {
+                display: none;
+            }
+        
+            .dummy_content {
+                top: -14px;
+                right: 0;
+                width: 375px;
+            
+                h2 {
+                    font-size: 35px;
+                    line-height: 40px;
+            
+                    .filled_blue {
+                        font-size: 43px;
+                    }
+                }
+            
+                .dummy_callback_label {
+                    padding-top: 23px;
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+            }
+        }    
+    }
+
+    .local-jobs {
+
+        &_content {
+            padding-top: 46px;
+        }
+    }
+
+    .footer_dummy {
+        height: 438px;
+        padding-top: 46px;
+    
+        &_content {
+    
+            h2 {
+                font-size: 33px;
+                line-height: 43px;
+            }
+    
+            h3 {
+                padding-top: 16px;
+                font-size: 18px;
+                line-height: 24px;
+            } 
+
+            .order_button {
+                margin-top: 58px;
+            }
+        }
+    
+        .order_reflection {
+            font-size: 62px;
+        }
+    }
+}

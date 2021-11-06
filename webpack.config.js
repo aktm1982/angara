@@ -22,8 +22,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'news.html',
-            template: './src/news.html'
+            filename: 'dummy.html',
+            template: './src/dummy.html'
         }),
         new MiniCssExtractPlugin({
             filename: 'style.css'

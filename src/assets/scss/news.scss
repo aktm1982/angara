@@ -190,7 +190,7 @@
     }
 }
 
-.news_link {
+.news_button {
     display: flex;
     justify-content: center;
     padding-bottom: 105px;
@@ -216,8 +216,11 @@
     }
 }
 
-.callback {
-    background-color: #33507C;
+.callback_news {
+    &_news {
+        background-color: #33507C;
+
+    }
 
     &_prolog {
         padding-top: 75px;
