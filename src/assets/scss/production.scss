@@ -1,34 +1,5 @@
-.page-title {
-    height: 356px;
+.title-generic_production {
     background: url(../images/production/1\ 916839258.jpg) center/cover no-repeat;
-
-    &_content {
-        position: relative;
-        padding-top: 110px;
-
-        h2 {
-            font-weight: bold;
-            font-size: 62px;
-            line-height: 142px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            text-shadow: -4px 4px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .reflection {
-            position: absolute;
-            top: 40%;
-            font-weight: bold;
-            font-size: 180px;
-            line-height: 142px;
-            text-align: center;
-            text-transform: uppercase;
-            color: transparent;
-            opacity: 0.6;
-            -webkit-text-stroke: 1px #FFF;
-        }
-    }
 }
 
 .production-types {

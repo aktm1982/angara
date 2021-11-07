@@ -1,0 +1,230 @@
+body {
+    background: #E5E5E5;
+}
+
+.title-generic_standard {
+    background: url(../images/generic/matthew-smith-Rfflri94rs8-unsplash.jpg) center/cover no-repeat;
+}
+
+.accent-block {
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 127px 0;
+
+        .text {
+            max-width: 511px;
+
+            h2 {
+                padding-bottom: 17px;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 34px;
+                color: #4975A5;
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                color: #454545;
+            }
+        }
+
+        .image img {
+            width: 590px;
+        }
+    }
+}
+
+.poster-block {
+    background: url(../images/generic/ivars-utinans-vkQgb1lZZPQ-unsplash.jpg) center/cover no-repeat;
+    padding: 252px 0 78px;
+
+    &_content {
+        width: 725px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 70px;
+            text-transform: uppercase;
+            text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+
+            .filled_blue {
+                color: #4975A5;
+            }
+        }
+    }
+}
+
+.side-title-block {
+    background: #FFFFFF;
+
+    &_content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 126px 0 91px;
+
+        .block-title_vertical {
+            position: absolute;
+            top: 380px;
+            left: -239px;
+            font-weight: bold;
+            font-size: 81px;
+            line-height: 60px;
+            text-align: right;
+            text-transform: uppercase;
+            color: #4975A5;
+            transform: rotate(-90deg);
+        }
+
+        .image img {
+            width: 592px;
+        }
+
+        .text {
+            max-width: 591px;
+            padding-left: 105px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #454545;
+
+            p {
+                padding-bottom: 33px;
+            }
+        }
+    }
+}
+
+.cols-2 {
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 101px 0;
+
+        .col_item {
+            width: 49.6%;
+
+            display: flex;
+            .icon {
+                width: 64px;
+            }
+
+            .text {
+                color: #454545;
+                max-width: 537px;
+                padding-left: 31px;
+                padding-right: 90px;
+
+                h2 {
+                    font-weight: bold;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                }
+    
+                p {
+                    padding-top: 17px;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+            }
+
+            .text_full {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.side-title-poster-block {
+    background: #FFF;
+    &_content {
+        position: relative;
+        padding: 121px 0;
+
+        .title_vertical {
+            position: absolute;
+            top: 415px;
+            left: -302px;
+            width: 704px;
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 60px;
+            text-align: right;
+            text-transform: uppercase;
+            color: #4975A5;
+            transform: rotate(-90deg);
+        }
+
+        .block_content {
+            padding-left: 220px;
+
+            .block_poster {
+                position:relative;
+                background: url(../images/generic/Rectangle\ 481.jpg) center/cover no-repeat;
+                width: 1010px;
+                height: 334px;
+                overflow: hidden;
+
+                h3 {
+                    position: absolute;
+                    right: 0;
+                    bottom: 39px;
+                    width: 589px;
+                    font-weight: bold;
+                    font-size: 55px;
+                    line-height: 70px; 
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+
+                    .filled_blue {
+                        color: #4975A5;
+                    }
+                }
+            }
+
+            .text {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 24px;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 24px;
+                color: #454545;
+
+                p {
+                    padding-bottom: 24px;
+                }
+
+                .col_narrow {
+                    max-width: 380px;
+                }
+    
+                .col_wide {
+                    max-width: 587px;
+                }
+            }
+        }
+    }
+}
+
+.gallery-block {
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 129px;
+
+        .gallery_item img {
+            max-width: 95%;
+        }
+    }
+}

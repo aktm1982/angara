@@ -139,8 +139,40 @@ body {
     }
 }
 
+.title-generic {
+    height: 356px;
+   
+    &_content {
+        position: relative;
+        padding-top: 110px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 62px;
+            line-height: 142px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: -4px 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .reflection {
+            position: absolute;
+            top: 40%;
+            font-weight: bold;
+            font-size: 176px;
+            line-height: 142px;
+            text-align: center;
+            text-transform: uppercase;
+            color: transparent;
+            opacity: 0.6;
+            -webkit-text-stroke: 1px #FFF;
+        }
+    }
+}
+
 .header {
-    background: url('../images/dan-otis-OYFHT4X5isg-unsplash(2) 1.png') center/cover no-repeat;
+    background: url('../images/index/dan-otis-OYFHT4X5isg-unsplash(2) 1.png') center/cover no-repeat;
     height: 921px;     
 
     &_prolog {
@@ -260,7 +292,7 @@ body {
     }
 }
 
-.specs {
+.counters {
     background-color: $corp_gray-color;
     height: 310px;
 
@@ -268,33 +300,41 @@ body {
         display: flex;
         justify-content: space-between;
         margin: auto;
-        width: 866px;
+        width: 1010px;
         padding-top: 80px;
 
-        h3 {
-            font-size: 92px;
-            font-weight: 700;
-            line-height: 112px;
-            letter-spacing: 0em;
-            text-align: left;
-    
-            .font_tiny {
-                font-family: Montserrat;
-                font-size: 24px;
-                font-weight: 400;
-                line-height: 29px;
-                letter-spacing: 0.1em;
+        .counter_item {
+            width: 485px;
+
+            h3 {
+                font-size: 92px;
+                font-weight: 700;
+                line-height: 112px;
+                letter-spacing: 0em;
+                text-align: left;
+        
+                .font_tiny {
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    letter-spacing: 0.1em;
+                    text-align: left;
+                }
+            }
+
+            &_label {
+                font-size: 26px;
+                font-weight: 500;
+                line-height: 32px;
+                letter-spacing: 0em;
                 text-align: left;
             }
-        }
-    }
 
-    &_label {
-        font-size: 26px;
-        font-weight: 500;
-        line-height: 12px;
-        letter-spacing: 0em;
-        text-align: left;
+            &_narrow {
+                width: 320px;
+            }
+        }
     }
 }
 
@@ -367,7 +407,7 @@ body {
 
 .history {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.8) 100%), 
-        url('../images/image\ 9.jpg') center/cover no-repeat;
+        url('../images/index/image\ 9.jpg') center/cover no-repeat;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     height: 778px;
 
@@ -453,7 +493,7 @@ body {
     padding-top: 110px;
 
     &_content {
-        background-image: url('../images/buklet.jpg');
+        background-image: url('../images/index/buklet.jpg');
         background-size: cover;
         height: 919px;
 
@@ -634,7 +674,7 @@ body {
     position: relative;
     height: 1523px;
     background: linear-gradient(20deg, rgba(69, 69, 69, 1.0) 80%, rgba(69, 69, 69, 0.6) 90%),
-    url(../images/forest-3728911_1280.jpg) top left/100% no-repeat;
+    url(../images/index/forest-3728911_1280.jpg) top left/100% no-repeat;
 
     &_title {
         position: absolute;
@@ -737,7 +777,7 @@ body {
 .projects {
     height: 891px;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%),
-        url(../images/photo5258396372971926496.jpg) center/cover no-repeat;
+        url(../images/index/photo5258396372971926496.jpg) center/cover no-repeat;
     
     &_content {
         .title {
@@ -806,7 +846,7 @@ body {
 
 .osb-info {
     height: 828px;
-    background: url(../images/буклет\ 2021-01\ 2.jpg) center/cover no-repeat;
+    background: url(../images/index/буклет\ 2021-01\ 2.jpg) center/cover no-repeat;
 
     &_content {
         position: relative;
@@ -933,7 +973,7 @@ body {
 .saving-forest {
     height: 600px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
-        url(../images/young-coniferous-wood.jpg) center/cover no-repeat;
+        url(../images/index/young-coniferous-wood.jpg) center/cover no-repeat;
 
     &_container {
         width: 1165px;
