@@ -1,0 +1,63 @@
+body {
+    background: #FFF;
+}
+
+.title-generic_machinery {
+    background: url(../images/machinery/shutterstock_1645495651_2-scaled.jpg) center/cover no-repeat;
+
+    .title-generic_content {
+        h2 {
+            font-size: 44px;
+        }
+
+        .reflection {
+            font-size: 131px;
+        }
+    }
+}
+
+.released-projects {
+    h2 {
+        padding-bottom:47px;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 53px;
+        color: #4975A5;
+    }
+
+    .col_item {
+        display: block;
+        width: 540px;
+
+        .text {
+            padding-right: 0;
+            padding-left: 47px;
+        }
+    }
+
+    &_item {
+        display: flex;
+        align-items: center;
+        padding: 55px 0;
+
+        .icon {
+            width: 64px;
+        }
+
+        .text {
+            width: 100%;
+
+            h3 {
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 35px;
+                text-transform: uppercase;
+                color: #454545;
+            }
+        }
+    }
+}
+
+.media {
+    margin-bottom: 332px;
+}
