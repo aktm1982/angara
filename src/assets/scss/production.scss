@@ -1,0 +1,175 @@
+.page-title {
+    height: 356px;
+    background: url(../images/production/1\ 916839258.jpg) center/cover no-repeat;
+
+    &_content {
+        position: relative;
+        padding-top: 110px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 62px;
+            line-height: 142px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: -4px 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .reflection {
+            position: absolute;
+            top: 40%;
+            font-weight: bold;
+            font-size: 180px;
+            line-height: 142px;
+            text-align: center;
+            text-transform: uppercase;
+            color: transparent;
+            opacity: 0.6;
+            -webkit-text-stroke: 1px #FFF;
+        }
+    }
+}
+
+.production-types {
+    background: #E5E5E5;
+    height: 567px;
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 105px;
+
+        .text {
+            max-width: 604px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 53px;
+                line-height: 53px;
+                color: #4975A5;
+            }
+
+            p {
+                padding-top: 33px;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                color: #454545;
+            }
+        }
+
+        .image img {
+            width: 498px;
+        }
+    }
+}
+
+.material-types {
+    height: 683px;
+    background-color: #fff;
+
+    &_content {
+        padding-top: 82px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 53px;
+            line-height: 63px;
+            color: #4975A5;
+        }
+
+        &_items {
+            padding-top: 97px;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                display: flex;
+
+                .image img {
+                    width: 167px;
+                }
+
+                .text {
+                    max-width: 392px;
+                    padding-left: 32px;
+                    color: #454545;
+
+                    h3 {
+                        font-weight: bold;
+                        font-size: 22px;
+                        line-height: 32px;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        padding-top: 23px;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.products {
+    padding-top: 99px;
+    padding-bottom: 95px;
+
+    &_content {
+        .item {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-bottom: 67px;
+
+            .image img {
+                width: 485px;
+                height: 380px;
+            }
+
+            .text {
+                width: 558px;
+                padding-left: 140px;
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 35px;
+                    text-transform: uppercase;
+                    color: #4975A5;
+                }
+
+                p {
+                    padding-top: 10px;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #454545;
+                }
+            }
+
+            .frame-box {
+                position: absolute;
+                left: 62px;
+                width: 1157px;
+                height: 251px;
+                border: 1px solid #4975A5;
+            }
+
+            &_right {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+
+                .frame-box {
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
+

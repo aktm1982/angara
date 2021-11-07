@@ -57,7 +57,8 @@ body {
 .button_dark {
     background: none;
     outline: none;
-    width: 100%;
+    height: 50px;
+    width: 289px;
     margin-bottom: 25px;
     padding: 13px;
     border: 2px solid $white_color;
@@ -78,9 +79,10 @@ body {
 .button_lite {
     background: none;
     outline: none;
-    border: 2px solid #000;
-    width: 289px;
     height: 50px;
+    width: 289px;
+    border: 2px solid #000;
+    font-family: Montserrat, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -997,7 +999,6 @@ body {
             font-weight: bold;
             font-size: 39px;
             line-height: 48px;
-            text-align: center;
             text-transform: uppercase;
             color: #5B5B5B;
 

@@ -217,12 +217,9 @@
 }
 
 .callback_news {
-    &_news {
-        background-color: #33507C;
+    background-color: #33507C;
 
-    }
-
-    &_prolog {
+    .callback_prolog {
         padding-top: 75px;
 
         h2 {
@@ -241,7 +238,7 @@
         }
     }
 
-    &_form {
+    .callback_form {
 
         label {
             color: #FFF;
