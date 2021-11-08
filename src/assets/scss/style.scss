@@ -165,10 +165,54 @@ body {
             text-align: center;
             text-transform: uppercase;
             color: transparent;
-            opacity: 0.6;
+            opacity: 0.4;
             -webkit-text-stroke: 1px #FFF;
         }
     }
+}
+
+.special_content {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    text-align: center;
+
+    &_stroked {
+        font-weight: 900;
+        font-size: 206px; 
+        line-height: 126px;
+        color: transparent;
+        -webkit-text-stroke: 3px $white_color;
+    }
+
+    &_measure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 21px;
+        width: 277px;
+        text-align: left;
+
+        .stroked_small {
+            font-weight: 900;
+            font-size: 87px;
+            line-height: 52px;
+            color: transparent;
+            -webkit-text-stroke: 3px $white_color;
+        }
+
+        .label {
+            padding-top: 27px;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+.filled_blue {
+    color: #4975A5;
 }
 
 .header {
@@ -301,7 +345,7 @@ body {
         justify-content: space-between;
         margin: auto;
         width: 1010px;
-        padding-top: 80px;
+        padding-top: 65px;
 
         .counter_item {
             width: 485px;
@@ -1004,46 +1048,6 @@ body {
             text-align: center;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-        }
-
-        .content {
-            display: flex;
-            justify-content: center;
-            padding-top: 70px;
-            text-align: center;
-
-            &_stroked {
-                font-weight: 900;
-                font-size: 206px; 
-                line-height: 126px;
-                color: transparent;
-                -webkit-text-stroke: 3px $white_color;
-            }
-
-            &_measure {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding-left: 21px;
-                width: 277px;
-                text-align: left;
-
-                .stroked_small {
-                    font-weight: 900;
-                    font-size: 87px;
-                    line-height: 52px;
-                    color: transparent;
-                    -webkit-text-stroke: 3px $white_color;
-                }
-
-                .label {
-                    padding-top: 27px;
-                    font-weight: 500;
-                    font-size: 26px;
-                    line-height: 30px;
-                    letter-spacing: 0.1em;
-                }
-            }
         }
     }
 }

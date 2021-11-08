@@ -1,0 +1,447 @@
+.title-generic_about {
+    background: url(../images/about/image\ 8.jpg) center/cover no-repeat;
+
+    .title-generic_content {
+        .reflection {
+            font-size: 157px;
+        }
+    }
+}
+
+.about_info {
+
+    .container {
+        position: relative;
+        padding-top: 59px;
+        padding-bottom: 66px;
+
+    .title {
+        position: absolute;
+        top: 293px;
+        left: -230px;
+        width: 577px;
+        text-align: right;
+        transform: rotate(-90deg);
+
+        h2 {
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 60px;
+            text-transform: uppercase;
+            color: #4975A5;
+        }
+    }
+
+    .icon {
+        padding-top: 6px;
+    }
+
+    .text {
+        padding-left: 170px;
+    }
+
+    .row_upper {
+        display: flex;
+        max-width: 100%;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 24px;
+        color: #454545;
+        padding-bottom: 47px;
+
+        .col {
+            padding-left: 41px;
+            max-width: 100%;
+        }
+    }
+
+    .row_lower {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 47px;
+
+        .col-2 {
+            max-width: 48%;
+            display: flex;
+        }
+
+        .text_block {
+            padding-left: 41px;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 24px;
+            color: #454545;
+        }
+    }
+
+    h3 {
+        padding-bottom: 22px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #454545;
+    }
+    }
+}
+
+.economic-effect {
+    height: 559px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%),
+        url(../images/about/Rectangle\ 472.jpg) center/cover no-repeat;
+
+    &_content {
+        .title {
+            padding-top: 250px;
+            width: 747px;
+                h2 {
+                    font-weight: bold;
+                    font-size: 55px;
+                    line-height: 70px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+
+                    .filled_blue {
+                        color: #4975A5;
+                    }
+                }
+        }
+        
+    }
+}
+
+.effect-points {
+    &_content {
+        position: relative;
+        padding-top: 86px;
+
+        .image_right {
+            float: right;
+            padding-left: 31px;
+
+            img {
+                max-width: 275px;
+            }
+        }
+
+        .point_item {  
+            display: flex;    
+            padding-bottom: 26px;
+
+            .num {
+                flex: none;
+                width: 76px;
+                font-weight: 900;
+                font-size: 68px;
+                line-height: 80px;
+                text-align: left;
+                text-transform: uppercase;
+                color: #4975A5;
+            }
+
+            .text {
+                padding-top: 9px;
+                max-width: 880px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #454545;
+            }
+        }
+
+        .reflection {
+            position: absolute;
+            top: 157px;
+            right: 0;
+
+            h2 {
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                font-weight: bold;
+                font-size: 77px;
+                line-height: 63px;
+                letter-spacing: -17.4px;
+                text-align: center;
+                text-transform: uppercase;
+                color: transparent;
+                -webkit-text-stroke: 1px #4975A5;
+            }
+        }
+    }
+}
+
+.region-effect {
+    position: relative;
+    padding-top: 59px;
+    padding-bottom: 66px;
+
+    &_content {
+        position: relative;
+
+        .title {
+            position: absolute;
+            top: 285px;
+            left: -298px;
+            width: 697px;
+            text-align: right;
+            transform: rotate(-90deg);
+    
+            h2 {
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 60px;
+                text-transform: uppercase;
+                color: #4975A5;
+            }
+        }
+    
+        .text {
+            padding-left: 170px;
+    
+            .poster {
+                background: url(../images/about/Rectangle\ 481.jpg) center/cover no-repeat;
+                width: 1010px;
+                height: 334px;
+                position: relative;
+    
+                .label {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 589px;
+
+                    h3 {
+                        font-weight: bold;
+                        font-size: 55px;
+                        line-height: 70px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+        
+                        .filled_blue {
+                            color: #4975A5;
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+        .row_lower {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 25px;
+            padding-bottom: 47px;
+    
+            .col-2-narrow {
+                max-width: 37%;
+            }
+    
+            .col-2-wide {
+                max-width: 56%;
+            }
+    
+            .text_block {
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 24px;
+                color: #454545;
+            }
+        }
+    
+        h3 {
+            padding-bottom: 22px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 34px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #454545;
+        }
+    }
+}
+
+.assortiment {
+    padding-bottom: 70px;
+    
+    &_content {
+        padding-top: 67px;
+
+        .title {
+            max-width: 653px;
+            margin: auto;
+
+            h2 {
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 70px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #454545;
+
+                .filled_blue {
+                    color: #4975A5;
+                }
+            }
+        }
+
+        .pics_row {
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            .row_item {
+                display: flex;
+
+                .icon {
+                    padding-right: 25px;
+                }
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 35px;
+                    text-transform: uppercase;
+                    color: #454545;
+                }
+            }
+        }
+    }
+}
+
+.facts-nums {
+    padding-top: 75px;
+    padding-bottom: 68px;
+    background: #F5F5F5;
+
+    &_content {
+        position: relative;
+        display: flex;
+
+        .title {
+            position: absolute;
+            top: 253px;
+            left: -247px;
+            transform: rotate(-90deg);
+
+            h2 {
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 60px;lign: right;
+                text-transform: uppercase;
+                color: #4975A5;
+            }
+        }
+
+        .poster {
+            padding-top: 16px;
+            padding-left: 105px;
+
+            img {
+                height: 537px;
+                width: 420px;
+            }
+        }
+
+        .point_list {
+            padding-left: 105px;
+
+            .point_item {  
+                display: flex;    
+                padding-bottom: 18px;
+    
+                .num {
+                    flex: none;
+                    width: 107px;
+                    font-weight: 900;
+                    font-size: 68px;
+                    line-height: 80px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    color: #4975A5;
+                }
+    
+                .text {
+                    padding-top: 9px;
+                    max-width: 880px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: #454545;
+
+                    .note {
+                        font-weight: bold;
+                        font-size: 11px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.publications {
+
+    &_content { 
+        padding-top: 54px;
+        padding-bottom: 85px;
+
+        .title {
+            width: 480px;
+            margin: auto;
+
+            h2 {
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 70px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #454545;
+
+                .filled_blue {
+                    color: #4975A5;;
+                }
+            }
+        }
+
+        .publications_block {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 22px;
+
+            .publication_item {
+                max-width: 31%;
+
+                img {
+                    width: 100%;
+                }
+
+                .pub_title {
+                    padding-top: 14px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #454545;
+                }
+
+                .text {
+                    padding-top: 12px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #7D7F82;
+                }
+            }
+        }
+
+        .news_pagination {
+            margin: auto;
+            padding-top: 64px;
+            width: 115px;
+        }
+    }
+}

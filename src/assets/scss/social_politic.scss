@@ -1,0 +1,125 @@
+.title-generic_social_politic {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%),
+    url(../images/social-politic/bg.jpg) center/cover no-repeat;
+
+    .title-generic_content {
+        h2 {
+            font-size: 57px;
+        }
+        .reflection {
+            font-size: 114px;;
+        }
+    }
+}
+
+.personal-comment {
+    &_content {
+        padding-top: 130px;
+        padding-bottom: 90px;
+        display: flex;
+        justify-content: space-between;
+
+        .image {
+            img {
+                width: 380px;
+            }
+
+            .label {
+                h2 {
+                    padding-top: 36px;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #000000;
+                }
+
+                h3 {
+                    padding-top: 12px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #4975A5;
+                }
+            }
+        }
+
+        .text {
+            padding-left: 115px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+
+            .design-quotes {
+                padding-bottom: 38px;
+            }
+
+            p {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+.forest-guard {
+    height: 1180px;
+    background: url(../images/social-politic/forest_guard.jpg) center/cover no-repeat, 
+        linear-gradient(180deg, #F5F5F5 50%, transparent 50%);
+
+    &_content {
+        padding-top: 98px;
+        position: relative;
+
+        .title {
+            position: absolute;
+            top: 526px;
+            left: -417px;    
+            transform: rotate(-90deg);
+
+            h2 {
+                font-weight: bold;
+                font-size: 68px;
+                line-height: 60px;
+                text-align: right;
+                text-transform: uppercase;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                .filled_blue {
+                    color: #4975A5;
+                }
+            }
+        }
+
+        .text {
+            padding-left: 207px;
+
+            h3 {
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 80px;
+                text-transform: uppercase;
+                color: #454545;
+
+                .filled_blue {
+                    color: #4975A5;
+                }
+            }
+
+            p {
+                padding-bottom: 27px;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+    }
+
+    .special_content {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 382px;
+    }
+}
