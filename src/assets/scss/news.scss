@@ -1,25 +1,32 @@
+@import 'colors_map.scss';
+
+.header_content {
+    padding-top: 30px;
+    padding-bottom: 19px;
+}
+
 .block_title {  
     h2{
         font-weight: bold;
         font-size: 37px;
         line-height: 142px;
         text-transform: uppercase;
-        color: #454545;
+        color: $corp_gray-color;
     }
 }
 
 .category {
-    background: #4975A5;
+    background: $corp_blue_lite-color;
     padding: 4px 11px;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: $common_white;
 }
 
 .header_news {
     height: 114px;
-    background: #454545;
+    background: $corp_gray-color;
 
     .header_prolog {
         padding-top: 31px;
@@ -37,28 +44,29 @@
 
         .preview {
             display: flex;
-            padding-bottom: 33px;
             
             .date {
                 padding-top: 3px;
                 font-weight: 800;
                 font-size: 18px;
                 line-height: 22px;
-                color: #4975A5;
+                color: $corp_blue_lite-color;
             }
 
             .title {
                 padding-left: 32px;
+                padding-bottom: 33px;
                 font-weight: bold;
                 font-size: 24px;
                 line-height: 29px;
-                color: #454545;
+                color: $corp_gray-color;
             }
         }
 
         .image {
             width: 100%;
             padding-bottom: 20px;
+
 
             img {
                 width: 100%;
@@ -69,7 +77,11 @@
             font-weight: normal;
             font-size: 18px;
             line-height: 22px;
-            color: #7D7F82;
+            color: $corp_gray_liter-color;
+
+            p {
+                padding-bottom: 33px;
+            }
         }
     }
 
@@ -91,11 +103,11 @@
                         font-size: 16px;
                         line-height: 59px;
                         text-transform: uppercase;
-                        color: #454545;
+                        color: $corp_gray-color;
                         text-decoration: none;
 
                         &:hover {
-                            color: #4975A5;
+                            color: $corp_blue_lite-color;
                         }
 
                         svg {
@@ -120,7 +132,7 @@
                 font-weight: bold;
                 font-size: 24px;
                 line-height: 48px;
-                color: #4975A5;
+                color: $corp_blue_lite-color;
             }
 
             input {
@@ -142,9 +154,14 @@
             }
         }
     }
+
+    .search-input_media {
+        bottom: -54px !important;
+    }
 }
 
 .news_main {
+    padding-top: 14px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -153,7 +170,7 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 29px;
-        color: #4975A5;
+        color: $corp_blue_lite-color;
     }
 
     .news_item {
@@ -175,7 +192,7 @@
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 20px;
-                color: #7D7F82;
+                color: $corp_gray_liter-color;
             }
         }
 
@@ -184,16 +201,22 @@
             font-weight: bold;
             font-size: 22px;
             line-height: 27px;
-            color: #454545;
+            color: $corp_gray-color;
         }
 
         &_text {
             font-weight: normal;
             font-size: 16px;
             line-height: 20px;
-            color: #7D7F82;
+            color: $corp_gray_liter-color;
         }
 
+    }
+}
+
+.sidebar_news {
+    .search-input {
+        bottom: -53px;
     }
 }
 
@@ -213,12 +236,12 @@
         line-height: 20px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #000000;
+        color: $common_black;
     
         &:hover {
-            background-color: #4975A5;
-            border-color: #4975A5;
-            color: #FFF;
+            background-color: $corp_blue_lite-color;
+            border-color: $corp_blue_lite-color;
+            color: $common_white;
         }
     }
 }
@@ -230,7 +253,7 @@
         padding-top: 75px;
 
         h2 {
-            color: #FFF;
+            color: $common_white;
 
             .filled_blue {
                 padding-left: 20px;
@@ -248,14 +271,14 @@
     .callback_form {
 
         label {
-            color: #FFF;
+            color: $common_white;
         }
 
         input {
-            color: #FFF;
+            color: $common_white;
 
             &::placeholder {
-                color: #FFF;
+                color: $common_white;
             }
         }
 
@@ -266,17 +289,17 @@
             margin-bottom: 25px;
             padding: 13px;
             border: 2px solid #FFF;
-            font-family: Montserrat, Tahoma, sans-serif;
+            font-family: 'Montserrat', sans-serif;;
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: #FFF;
+            color: $common_white;
 
             &:hover {
-                background: #FFF;
-                color: #000;
+                background: $common_white;
+                color: $common_black;
             }
         }
 
@@ -308,7 +331,7 @@
             line-height: 20px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: #5B5B5B;
+            color: $corp_gray-mid-color;
             border: 2px solid #5B5B5B;
             cursor: pointer;
 
@@ -330,7 +353,7 @@
         font-size: 22px;
         line-height: 27px;
         text-transform: uppercase;
-        color: #7A7A7A;
+        color: $corp_gray_liter-color;
     }
 
     &_text {
@@ -338,7 +361,7 @@
         font-size: 18px;
         line-height: 22px;
         text-decoration: none;
-        color: #FFF; 
+        color: $common_white; 
         padding-bottom: 24px;
 
         .text_bold {
@@ -369,17 +392,17 @@
                 margin-bottom: 25px;
                 padding: 13px;
                 border: 2px solid #FFF;
-                font-family: Montserrat, Tahoma, sans-serif;
+                font-family: 'Montserrat', sans-serif;;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
-                color: #FFF;
+                color: $common_white;
 
                 &:hover {
-                    background: #FFF;
-                    color: #000;
+                    background: $common_white;
+                    color: $common_black;
                 }
             }
         }
@@ -420,7 +443,7 @@
                     font-weight: normal;
                     font-size: 14px;
                     line-height: 17px;
-                    color: #7A7A7A;
+                    color: $corp_gray_liter-color;
                 }
             }
 
@@ -429,7 +452,7 @@
                     font-weight: normal;
                     font-size: 14px;
                     line-height: 17px;
-                    color: #7A7A7A;
+                    color: $corp_gray_liter-color;
                     text-decoration: none;
                 }
             }
@@ -439,7 +462,6 @@
 
 .speakers {
     position: relative;
-    padding-top: 50px;
     display: flex;
     justify-content: space-between;
 
@@ -459,14 +481,14 @@
             font-size: 18px;
             line-height: 22px;
             text-transform: uppercase;
-            color: #454545;
+            color: $corp_gray-color;
         }
 
         p {
             font-weight: normal;
             font-size: 18px;
             line-height: 22px;
-            color: #7D7F82;
+            color: $corp_gray_liter-color;
         }
     }
 
@@ -492,9 +514,141 @@
         font-weight: bold;
         font-size: 37px;
         line-height: 142px;
-        text-align: center;
+        text-align: left;
         text-transform: uppercase;
-        color: #454545;
+        color: $corp_gray-color;
+    }
+}
+
+@media (max-width: 1203px) {
+    .news_top {
+        flex-direction: column-reverse;
+
+        .main_menu {
+            width: 90%;
+            margin: auto;
+
+            .menu_list {
+                padding-top: 0;
+                display: flex;
+
+                ul {
+                    width: 100%;
+                    padding-right: 24px;
+                }
+            }
+
+            .search-input {
+                position: relative;
+                bottom: -25px;
+                width: 50%;
+            }
+        }
+
+        .preview_top {
+            padding-top: 76px;
+            width: 87%;
+            margin: auto;
+        }
+
+        .search-input_media {
+            bottom: -6px !important;
+        }
+    }
+
+    .news_main {
+        justify-content: space-around;
+    }
+
+    .news_main_media {
+        display: none;
+    }
+
+    .news_item_media {
+        display: none;
+    }
+
+    .speakers {
+        max-width: 88%;
+        margin: auto;
+        padding-bottom: 127px;
+
+        .image img {
+            flex: none;
+            width: 279px;
+        }
+
+        .text {
+            padding-left: 53px;
+            padding-right: 0;
+        }
+
+        .reflection {
+            bottom: 4px;
+            left: 257px;
+            text-align: left;
+        }
+
+        .reflection_media {
+            display: block;
+            left: 63%;
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .news_top {
+        flex-direction: column-reverse;
+
+        .main_menu {
+
+            .menu_list {
+                flex-direction: column;
+            }
+
+            .search-input {
+                width: 96%;
+            }
+        }
+
+        .preview_top {
+            display: none;
+        }
+    }
+
+    .news_main {
+        padding-top: 64px;
+    }
+
+    .speakers {
+        flex-direction: column;
+        align-items: center;
+        width: 96%;
+
+        .reflection {
+            left: 56%;
+            bottom: 46px;
+            h2 {
+                font-size: 57px;
+                line-height: 69px;
+            }
+        }
+
+        .reflection_media {
+            left: 80%;
+        }
+    }
+
+    .speakers_media {
+        flex-direction: column-reverse;
+    }
+
+    .interests {
+        h3 {
+            font-size: 33px;
+            line-height: 35px;
+        }
     }
 }
 

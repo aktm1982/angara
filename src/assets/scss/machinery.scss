@@ -1,5 +1,7 @@
+@import 'colors_map.scss';
+
 body {
-    background: #FFF;
+    background: $common_white;
 }
 
 .title-generic_machinery {
@@ -22,7 +24,7 @@ body {
         font-weight: bold;
         font-size: 45px;
         line-height: 53px;
-        color: #4975A5;
+        color: $corp_blue_lite-color;
     }
 
     .col_item {
@@ -52,7 +54,7 @@ body {
                 font-size: 22px;
                 line-height: 35px;
                 text-transform: uppercase;
-                color: #454545;
+                color: $corp_gray-color;
             }
         }
     }

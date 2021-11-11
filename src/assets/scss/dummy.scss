@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import 'colors_map.scss';
+
 .header_dummy {
     height: 1080px;
 
@@ -21,11 +24,10 @@
                 font-size: 70px;
                 line-height: 78px;
                 text-transform: uppercase;
-                color: #FFFFFF;
+                color: $common_white;
         
                 .filled_blue {
                     font-size: 72px;
-                    color: #4975A5;
                 }
             }
         
@@ -37,7 +39,7 @@
                 font-size: 47px;
                 line-height: 57px;
                 text-transform: uppercase;
-                color: #FFFFFF;
+                color: $common_white;
             }
         
             .callback {
@@ -51,15 +53,15 @@
                             font-size: 14px;
                             line-height: 17px;
                             text-transform: none;
-                            color: #FFFFFF;
+                            color: $common_white;
                         }
             
                         input {
                             width: 85%;
-                            color: #FFFFFF;
+                            color: $common_white;
 
                             &::placeholder {
-                                color: #FFFFFF;
+                                color: $common_white;
                             }
                         }
                     }
@@ -78,7 +80,7 @@
     height: 1310px;
     background: linear-gradient(90deg, #4975A5 60%, transparent 90%), 
         url(../images/dummy/image2.jpg) top right/cover no-repeat;
-    color: #FFF;
+    color: $common_white;
 
     &_content {
         width: 832px;
@@ -126,7 +128,7 @@
                 left: 32.5px;
                 width: 1px;
                 height: 100%;
-                background-color: #FFF;
+                background-color: $common_white;
             }
         }
     }
@@ -146,11 +148,7 @@
             line-height: 142px;
             text-align: center;
             text-transform: uppercase;
-            color: #454545;
-
-            .filled_blue {
-                color: #4975A5;
-            }
+            color: $corp_gray-color;
         }
 
         h3 {
@@ -158,7 +156,7 @@
             font-size: 24px;
             line-height: 34px;
             text-align: center;
-            color: #454545;
+            color: $corp_gray-color;
         }
 
         .order_button {

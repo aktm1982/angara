@@ -17,16 +17,24 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+              },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'about.html',
-            template: './src/about.html'
+            filename: 'index.html',
+            template: './src/index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.css'
+            filename: 'index.css'
         })
     ]
 }
