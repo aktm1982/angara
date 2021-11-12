@@ -9,10 +9,26 @@
 <body>
     <!-- // Header // -->
         <div class="header">
+            <div id="main_corp_menu" class="main_corp_menu menu_hidden">
+                <div id="menu_close_button" class="cross_sign">
+                    <p>&#10006;</p>
+                </div>
+                <div class="main_corp_menu_list">
+                    <ul>
+                        <li><a href="about.html">о нас</a></li>
+                        <li><a href="production.html">продукция</a></li>
+                        <li><a href="news.html">новости компании</a></li>
+                        <li><a href="machinery.html">оборудование и технологии</a></li>
+                        <li><a href="">контакты</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container">
                 <div class="header_content">
                     <div class="logo">
-                        <img src="../src/assets/images/logo.png" alt="angarales kodinsk logo">
+                        <a href="index.html">
+                            <img src="../src/assets/images/logo.png" alt="angarales kodinsk logo">
+                        </a>
                     </div>
                     <div class="contacts">
                         <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div>
@@ -43,7 +59,7 @@
                             <button class="button_transparent">Eng</button>|
                             <button class="button_transparent">China</button>
                         </div>
-                        <div class="menu_button">
+                        <div id="menu_open_button" class="menu_button">
                             <button class="button_transparent" style="font-size:24px">&#9776;</button>
                         </div>
                     </div>

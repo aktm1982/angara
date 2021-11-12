@@ -9,6 +9,21 @@
 <body>
     <!-- // Main corporate // -->
         <div class="main_corp">
+            <div id="menu_wrapper" class="menu_wrapper menu_wrapper_hidden"></div>
+            <div id="main_corp_menu" class="main_corp_menu menu_hidden">
+                <div id="menu_close_button" class="cross_sign">
+                    <p>&#10006;</p>
+                </div>
+                <div class="main_corp_menu_list">
+                    <ul>
+                        <li><a href="about.html">о нас</a></li>
+                        <li><a href="production.html">продукция</a></li>
+                        <li><a href="news.html">новости компании</a></li>
+                        <li><a href="machinery.html">оборудование и технологии</a></li>
+                        <li><a href="">контакты</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container">
                 <div class="header_content">
                     <div class="logo">
@@ -43,7 +58,7 @@
                             <button class="button_transparent">Eng</button>|
                             <button class="button_transparent">China</button>
                         </div>
-                        <div class="menu_button">
+                        <div id="menu_open_button" class="menu_button">
                             <button class="button_transparent" style="font-size:24px">&#9776;</button>
                         </div>
                     </div>
@@ -86,11 +101,11 @@
         <div class="counters">
             <div class="counters_container" style="max-width:866px">
                 <div class="counter_item" style="max-width:411px">
-                    <h3 class="counter_display">310 000<span class="font_tiny"> м<sup>3</sup></span></h3>
+                    <h3><span class="counter_display" data-target-value="310000" data-target-fixed="0">0</span><span class="font_tiny"> м<sup>3</sup></span></h3>
                     <p class="counter_item_label">сухого пиломатериала</p>
                 </div>
                 <div class="counter_item" style="max-width:296px">
-                    <h3 class="counter_display">4,6<span class="font_tiny"> млр. руб.</span></h3>
+                    <h3><span class="counter_display" data-target-value="4.6" data-target-fixed="1">0</span><span class="font_tiny"> млр.руб</span></h3>
                     <p class="counter_item_label">общие инвестиции</p>
                 </div>
             </div>
@@ -677,7 +692,7 @@
                                 <span class="text_bold">E-mail: </span>Mail&#64;24les.ru 
                             </div>
                             <div class="footer_text">
-                                <span class="text_bold">Адрес: </span>г. Кодинск, ул. 2-я Коммунальная, Земельный участок 18
+                                <span class="text_bold">Адрес: </span>г. Кодинск,<br>ул. 2-я Коммунальная,<br>Земельный участок 18
                             </div>
                         </div>
                         <div class="links_container">

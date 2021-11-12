@@ -40,7 +40,8 @@ body {
     &_item {
         display: flex;
         align-items: center;
-        padding: 55px 0;
+        height: 171px;
+        width: 90%;
 
         .icon {
             width: 64px;
@@ -61,5 +62,69 @@ body {
 }
 
 .media_bordered {
+    margin-top: 95px;
     margin-bottom: 332px;
+}
+
+@media (max-width: 1203px) {
+    .title-generic_machinery {
+        .title-generic_content {
+            max-width: 799px;
+            margin: auto;
+            h2 {
+                
+                line-height: 54px;
+            }
+        }
+    }
+
+    .released-projects {
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 45px;
+            line-height: 53px;
+            text-align: center;
+        }
+        .col_item {
+            width: 70%;
+
+            .released-projects_item {
+                width: 100%
+            }
+
+        }
+    }
+
+    .side-title-block_content {
+        padding-top: 95px;
+
+        flex-direction: column-reverse;
+
+        .block-title_vertical {
+            top: 334px;
+        }
+
+        .image {
+            
+            img {
+                position: relative;
+                top: 0;
+                left: 31%;
+                width: 591px;
+                height: auto;
+            }
+        }
+
+        .text {
+            width: 99%;
+            padding-left: 0;
+            padding-top: 44px;
+        }
+    }
+
+    .media_bordered {
+        margin-top: 36px;
+    }
 }

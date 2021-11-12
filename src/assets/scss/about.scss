@@ -6,7 +6,9 @@
 
     .title-generic_content {
         .reflection {
-            font-size: 157px;
+            font-size: 152px;
+            width: 100%;
+            margin: auto;
         }
     }
 }
@@ -15,12 +17,12 @@
 
     .container {
         position: relative;
-        padding-top: 59px;
-        padding-bottom: 66px;
+        padding-top: 55px;
+        padding-bottom: 50px;
 
     .title {
         position: absolute;
-        top: 293px;
+        top: 283px;
         left: -230px;
         width: 577px;
         text-align: right;
@@ -116,12 +118,16 @@
         position: relative;
         padding-top: 86px;
 
-        .image_right {
+        .images_block {
             float: right;
+            width: 49%;
+            display: flex;
+            justify-content: space-between;
             padding-left: 31px;
 
             img {
-                max-width: 275px;
+                max-width: 48%;
+                flex: none;
             }
         }
 
@@ -175,7 +181,7 @@
 .region-effect {
     position: relative;
     padding-top: 59px;
-    padding-bottom: 66px;
+    padding-bottom: 36px;
 
     &_content {
         position: relative;
@@ -236,11 +242,11 @@
             padding-bottom: 47px;
     
             .col-2-narrow {
-                max-width: 37%;
+                width: 37%;
             }
     
             .col-2-wide {
-                max-width: 56%;
+                width: 56%;
             }
     
             .text_block {
@@ -259,6 +265,15 @@
             text-align: left;
             text-transform: uppercase;
             color: $corp_gray-color;
+        }
+    }
+}
+
+.counters_about {
+    padding-left: 92px;
+    .counter_item {
+        &_label {
+            width: 92%;
         }
     }
 }
@@ -309,35 +324,35 @@
 
 .facts-nums {
     padding-top: 75px;
-    padding-bottom: 68px;
-    background: $common_white;
+    padding-bottom: 39px;
+    background: $corp_white-color;
 
     &_content {
-        position: relative;
         display: flex;
 
-        .title {
-            position: absolute;
-            top: 253px;
-            left: -247px;
-            transform: rotate(-90deg);
-
-            h2 {
-                font-weight: bold;
-                font-size: 55px;
-                line-height: 60px;lign: right;
-                text-transform: uppercase;
-                color: $corp_blue_lite-color;
-            }
-        }
-
         .poster {
+            position: relative;
             padding-top: 16px;
             padding-left: 105px;
 
             img {
                 height: 537px;
                 width: 420px;
+            }
+
+            .title {
+                position: absolute;
+                top: 252px;
+                left: -243px;
+                transform: rotate(-90deg);
+
+                h2 {
+                    font-weight: bold;
+                    font-size: 55px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    color: $corp_blue_lite-color;
+                }
             }
         }
 
@@ -383,7 +398,7 @@
 
     &_content { 
         padding-top: 54px;
-        padding-bottom: 85px;
+        padding-bottom: 70px;
 
         .title {
             width: 480px;
@@ -402,10 +417,10 @@
         .publications_block {
             display: flex;
             justify-content: space-between;
-            padding-top: 22px;
+            padding-top: 34px;
 
             .publication_item {
-                max-width: 31%;
+                width: 31%;
 
                 img {
                     width: 100%;
@@ -436,3 +451,359 @@
         }
     }
 }
+
+@media (max-width: 1203px) {
+    .title-generic_about {
+        .title-generic_content {
+            .reflection {
+                font-size: 98px;
+            }
+        }
+    }
+
+    .about_info {
+        .container {
+            padding-bottom: 0;
+            .row_lower {
+                flex-direction: column;
+                .col-2 {
+                    max-width: 100%;
+                    padding-bottom: 47px;
+                }
+            }
+        }
+
+    }
+
+    .economic-effect_content {
+        .title {
+            padding-top: 299px;
+        }
+    }
+
+    .effect-points {
+        &_content {
+    
+            .images_block {
+                float:none;
+                width: 77%;
+                padding-left: 0;
+            }
+
+            
+            .point_item .text {
+                max-width: 1000px;
+                width: 69%;
+            }
+
+            .reflection {
+                transform: translate(0, -70px);
+            }
+        }
+    }
+
+    .region-effect {
+        min-height: 1140px;
+        padding-top: 31px;
+
+        &_content {
+            position: relative;
+
+            .title {
+                position: absolute;
+                top: 645px;
+                left: -288px;
+                font-size: 50px;
+            }
+
+            .text {
+                padding-left: 0px;
+
+                .poster {
+                    width: 100%;
+
+                    .label {
+                        left: 0;
+                    }
+                }
+            }
+
+            .row_lower {
+                padding-left: 171px;
+                flex-direction: column;
+
+                p {
+                    padding-bottom: 24px;
+                }
+
+                .col-2-narrow {
+                    width: 100%;
+                }
+
+                .col-2-wide {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .counters_about {
+        .counter_item {
+            &_label {
+                width: 100%;
+            }
+        }
+    }
+
+    .assortiment_content {
+        .title {
+            h2 {
+                font-size: 50px;
+                line-height: 65px;
+            }
+        }
+
+        .pics_row {
+            flex-wrap: wrap;
+
+            .row_item {
+                width: 49%;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .facts-nums_content {
+        flex-direction: column;
+        align-items: center;
+
+        .poster {
+            padding: 0;
+
+            img {
+                width: 549px;
+                height: 702px;
+            }
+
+            .title {
+                top: 318px;
+                left: -414px;
+    
+                h2 {
+                    font-size: 72px;
+                    line-height: 60px;
+                }
+            }
+        }
+
+        .point_list {
+            padding-top: 24px;
+            .point_item {
+                .num {
+                    width: 95px;
+                }
+            }
+        }
+
+        .point_list {
+            padding-left: 0;
+            width: 549px;
+        }
+    }
+
+    .publications_content {
+        .title {
+            width: 424px;
+            h2 {
+                font-size: 50px;
+                line-height: 65px;
+            }
+        }  
+
+        .publications_block {
+            flex-wrap: wrap;
+            width: 99%;
+            margin: auto;
+
+            .publication_item {
+                width: 50%;
+                padding: 0 1%;
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .title-generic_about {
+        .title-generic_content {
+            h2 {
+                font-size: 45px;
+            }
+
+            .reflection {
+                font-size: 114px;
+            }
+        }
+    }
+
+    .about_info {
+        .container {
+            .title {
+                top: 381px;
+                left: -316px;
+                width: 705px;
+
+                h2 {
+                    font-size: 37px;
+                }
+            }
+
+            .text {
+                padding-left: 77px;
+            }
+
+            .row_lower {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .economic-effect_content {
+        .title {
+            width: 350px;
+            padding-top: 340px;
+
+            h2 {
+                font-size: 33px;
+                line-height: 43px;
+            }
+        }
+
+        .images_block {
+            width: 100%;
+        }
+    }
+
+    .effect-points_content {
+        padding-top: 62px;
+
+        .images_block {
+            width: 100%;
+        }
+
+        .reflection {
+            top: 130px;
+        }
+    }
+
+    .region-effect_content {
+        min-height: 1374px;
+        .text {
+            .poster {
+                .label {
+                    width: 351px;
+
+                    h3 {
+                        font-size: 33px;
+                        line-height: 43px;
+                    }
+                }
+                
+            }
+        }
+
+        .title {
+            top: 840px;
+            left: -478px;
+            width: 993px;
+
+            h2 {
+                font-size: 46px;
+            }
+        }
+
+        .row_lower {
+            padding-left: 68px;
+            padding-top: 38px;
+
+            p {
+                padding-bottom: 36px;;
+            }
+        }
+    }
+
+    .counters_about {
+        padding-left: 8px;
+        padding-top: 50px;
+    }
+    .assortiment {
+        padding-bottom: 18px;
+
+        .assortiment_content {
+            .title {
+                h2 {
+                    font-size: 33px;
+                    line-height: 43px;
+                }
+            }
+    
+            .pics_row {
+                padding-left: 8px;
+                .row_item {
+                    width: 98%;
+                }
+            }
+        }
+    }
+
+    .facts-nums_content {
+        .poster {
+            img {
+                width: 290px;
+                height: 371px;
+            }
+
+            .title {
+                top: 155px;
+                left: -234px;
+
+                h2 {
+                    font-size: 38px;
+                }
+            }
+        }
+
+        .point_list {
+            width: 422px;
+            .point_item {
+                .num {
+                    width: 67px;
+                }
+            }
+        }
+    }
+
+    .publications_content {
+        padding-bottom: 32px;
+        .title {
+            width: 282px;
+
+            h2 {
+                font-size: 33px;
+                line-height: 43px;
+            }
+        }
+
+        .publications_block {
+            flex-direction: column;
+
+            .publication_item {
+                flex: none;
+                width: 100%;
+                padding-bottom: 32px;
+            }
+
+        }
+    }
+}
+

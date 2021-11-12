@@ -90,7 +90,7 @@
         width: 31%;
 
         .menu_list {
-            padding-top: 68px;
+            padding-top: 0px;
             padding-left: 45px;
 
             ul {
@@ -342,123 +342,123 @@
     }
 }
 
-.footer {
-    background-color: #2E2828;
-    height: 353px;
-    padding-top: 41px;
+// .footer {
+//     background-color: #2E2828;
+//     height: 353px;
+//     padding-top: 41px;
 
-    &_title {
-        padding-bottom: 21px;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
-        text-transform: uppercase;
-        color: $corp_gray_liter-color;
-    }
+//     &_title {
+//         padding-bottom: 21px;
+//         font-weight: 600;
+//         font-size: 22px;
+//         line-height: 27px;
+//         text-transform: uppercase;
+//         color: $corp_gray_liter-color;
+//     }
 
-    &_text {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        text-decoration: none;
-        color: $common_white; 
-        padding-bottom: 24px;
+//     &_text {
+//         font-weight: normal;
+//         font-size: 18px;
+//         line-height: 22px;
+//         text-decoration: none;
+//         color: $common_white; 
+//         padding-bottom: 24px;
 
-        .text_bold {
-            font-weight: bold;
-        }
-    }
+//         .text_bold {
+//             font-weight: bold;
+//         }
+//     }
 
-    &_content {
-        display: flex;
-        justify-content: space-between;
+//     &_content {
+//         display: flex;
+//         justify-content: space-between;
 
-        .callback_container {
-            width: 290px;
+//         .callback_container {
+//             width: 290px;
 
-            .logo_container {
-                max-width: 167px;
-                padding-bottom: 41px;
+//             .logo_container {
+//                 max-width: 167px;
+//                 padding-bottom: 41px;
 
-                img {
-                    max-width: 100%;
-                }
-            }
+//                 img {
+//                     max-width: 100%;
+//                 }
+//             }
 
-            button {
-                background: none;
-                outline: none;
-                width: 100%;
-                margin-bottom: 25px;
-                padding: 13px;
-                border: 2px solid #FFF;
-                font-family: 'Montserrat', sans-serif;;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 20px;
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
-                color: $common_white;
+//             button {
+//                 background: none;
+//                 outline: none;
+//                 width: 100%;
+//                 margin-bottom: 25px;
+//                 padding: 13px;
+//                 border: 2px solid #FFF;
+//                 font-family: 'Montserrat', sans-serif;;
+//                 font-weight: 600;
+//                 font-size: 16px;
+//                 line-height: 20px;
+//                 letter-spacing: 0.1em;
+//                 text-transform: uppercase;
+//                 color: $common_white;
 
-                &:hover {
-                    background: $common_white;
-                    color: $common_black;
-                }
-            }
-        }
+//                 &:hover {
+//                     background: $common_white;
+//                     color: $common_black;
+//                 }
+//             }
+//         }
 
-        .menu_container {
-            width: 155px;
+//         .menu_container {
+//             width: 155px;
 
-            ul {
-                list-style-type: none;
+//             ul {
+//                 list-style-type: none;
 
-                li {
-                    padding-bottom: 24px;
-                }
-            }
-        }
+//                 li {
+//                     padding-bottom: 24px;
+//                 }
+//             }
+//         }
 
-        .address_container {
-            width: 276px;
-        }
+//         .address_container {
+//             width: 276px;
+//         }
 
-        .links_container {
-            width: 236px;
+//         .links_container {
+//             width: 236px;
 
-            .social_icons {
-                display: flex;
-                justify-content: space-between;
-                padding-bottom: 26px;
+//             .social_icons {
+//                 display: flex;
+//                 justify-content: space-between;
+//                 padding-bottom: 26px;
 
-                img {
-                    height: 26px;
-                }
-            }
+//                 img {
+//                     height: 26px;
+//                 }
+//             }
 
-            .politics_link {
-                padding-bottom: 176px;
+//             .politics_link {
+//                 padding-bottom: 176px;
 
-                a {
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: $corp_gray_liter-color;
-                }
-            }
+//                 a {
+//                     font-weight: normal;
+//                     font-size: 14px;
+//                     line-height: 17px;
+//                     color: $corp_gray_liter-color;
+//                 }
+//             }
 
-            .props_link {
-                a {
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: $corp_gray_liter-color;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
+//             .props_link {
+//                 a {
+//                     font-weight: normal;
+//                     font-size: 14px;
+//                     line-height: 17px;
+//                     color: $corp_gray_liter-color;
+//                     text-decoration: none;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .speakers {
     position: relative;

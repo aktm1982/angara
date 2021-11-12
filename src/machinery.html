@@ -8,50 +8,68 @@
 </head>
 <body>
     <!-- // Header // -->
-        <div class="header header_news">
-            <div class="container">
-                <div class="header_prolog">
-                    <div class="logo">
+    <div class="header">
+        <div id="menu_wrapper" class="menu_wrapper menu_wrapper_hidden"></div>
+        <div id="main_corp_menu" class="main_corp_menu menu_hidden">
+            <div id="menu_close_button" class="cross_sign">
+                <p>&#10006;</p>
+            </div>
+            <div class="main_corp_menu_list">
+                <ul>
+                    <li><a href="about.html">о нас</a></li>
+                    <li><a href="production.html">продукция</a></li>
+                    <li><a href="news.html">новости компании</a></li>
+                    <li><a href="machinery.html">оборудование и технологии</a></li>
+                    <li><a href="">контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header_content">
+                <div class="logo">
+                    <a href="index.html">
                         <img src="../src/assets/images/logo.png" alt="angarales kodinsk logo">
+                    </a>
+                </div>
+                <div class="contacts">
+                    <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div>
+                    <div class="social-icons">
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/vk.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/instagram.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/twitter.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/fb.png"></a>
+                        </div>
                     </div>
-                    <div class="contacts">
-                        <div class="callback-order"><a href="#">Заказать звонок</a></div>
-                        <div class="social-icons">
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/vk.png"></a>
-                            </div>
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/instagram.png"></a>
-                            </div>
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/twitter.png"></a>
-                            </div>
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/fb.png"></a>
-                            </div>
-                        </div>
-                        <div class="search">
-                            <input class="search_text" type="text" placeholder="Поиск">
-                            <button class="search_button button_transparent">
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.8167 13.933L10.5511 9.66739C11.3774 8.64679 11.8749 7.34992 11.8749 5.93744C11.8749 2.66373 9.21113 0 5.93742 0C2.6637 0 0 2.6637 0 5.93742C0 9.21113 2.66373 11.8749 5.93745 11.8749C7.34992 11.8749 8.64679 11.3774 9.66739 10.5511L13.933 14.8167C14.0548 14.9386 14.2148 14.9998 14.3749 14.9998C14.5349 14.9998 14.6949 14.9386 14.8167 14.8167C15.0611 14.5723 15.0611 14.1773 14.8167 13.933ZM5.93745 10.6249C3.35246 10.6249 1.25 8.5224 1.25 5.93742C1.25 3.35243 3.35246 1.24997 5.93745 1.24997C8.52243 1.24997 10.6249 3.35243 10.6249 5.93742C10.6249 8.5224 8.5224 10.6249 5.93745 10.6249Z" fill="white"/>
-                                    </svg>                                    
-                            </button>
-                        </div>
-                        <div class="lang">
-                            <button class="button_transparent">Ru</button>|
-                            <button class="button_transparent">Eng</button>|
-                            <button class="button_transparent">China</button>
-                        </div>
-                        <div class="menu">
-                            <button class="button_transparent">&#9776;</button>
+                    <div class="search">
+                        <input class="search_label" type="text" placeholder="Поиск">
+                        <button class="search_button button_transparent">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8167 13.933L10.5511 9.66739C11.3774 8.64679 11.8749 7.34992 11.8749 5.93744C11.8749 2.66373 9.21113 0 5.93742 0C2.6637 0 0 2.6637 0 5.93742C0 9.21113 2.66373 11.8749 5.93745 11.8749C7.34992 11.8749 8.64679 11.3774 9.66739 10.5511L13.933 14.8167C14.0548 14.9386 14.2148 14.9998 14.3749 14.9998C14.5349 14.9998 14.6949 14.9386 14.8167 14.8167C15.0611 14.5723 15.0611 14.1773 14.8167 13.933ZM5.93745 10.6249C3.35246 10.6249 1.25 8.5224 1.25 5.93742C1.25 3.35243 3.35246 1.24997 5.93745 1.24997C8.52243 1.24997 10.6249 3.35243 10.6249 5.93742C10.6249 8.5224 8.5224 10.6249 5.93745 10.6249Z" fill="white"/>
+                            </svg>                                    
+                        </button>
+                    </div>
+                    <div class="lang">
+                        <button class="button_transparent">Ru</button>|
+                        <button class="button_transparent">Eng</button>|
+                        <button class="button_transparent">China</button>
+                    </div>
+                    <div id="menu_open_button" class="menu_button">
+                        <div id="menu_open_button" class="menu_button">
+                            <button class="button_transparent" style="font-size:24px">&#9776;</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!-- // Header // -->
-    
     <!-- // Title generic // -->
         <div class="title-generic title-generic_machinery">
             <div class="container">
@@ -67,7 +85,9 @@
             <div class="container">
                 <div class="cols-2_content released-projects">
                     <div class="col_item">
-                        <h2>В рамках проекта установлены</h2>
+                        <div class="released-projects_item">
+                            <h2>В рамках проекта установлены</h2>
+                        </div>
                         <div class="released-projects_item">
                             <div class="icon">
                                 <svg width="61" height="41" viewBox="0 0 61 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,7 +234,7 @@
         </div>
     <!-- // Released projects // --> 
 
-<!-- // Gallery block // -->
+    <!-- // Gallery block // -->
         <div class="gallery-block">
             <div class="container">
                 <div class="gallery-block_content">
@@ -236,17 +256,17 @@
     <!-- // Gallery block // -->
 
     <!-- // Side title block // -->   
-                            <div class="side-title-block">
-                                <div class="container">
-                                    <div class="side-title-block_content">
-                                        <h2 class="block-title_vertical">логистика</h2>
-                                        <div class="text">
-                                            <p><b>Предприятие использует собственный парк специальной техники VOLVO, DAOSAN, KOMATSU и других мировых брендов,
-                        а также автомашины для транспортировки сырья и готовой продукции SCANIA, MERCEDES.</b></p>
+        <div class="side-title-block">
+            <div class="container">
+                <div class="side-title-block_content">
+                    <h2 class="block-title_vertical">логистика</h2>
+                    <div class="text">
+                        <p><b>Предприятие использует собственный парк специальной техники VOLVO, DAOSAN, KOMATSU и других мировых брендов,
+                            а также автомашины для транспортировки сырья и готовой продукции SCANIA, MERCEDES.</b></p>
                         <p>Готовая продукция доставляется с производственных площадок до железнодорожной станции Карабула (Богучанский район
-                        Красноярского края), откуда напрямую отправляется заказчикам и, благодаря партнерству с РЖД, приходит всегда вовремя.
-                        Сырой пиломатериал отгружается спецплатформами, сухой пиломатериал доставляется полувагонами или 40-футовыми
-                        контейнерами.</p>
+                            Красноярского края), откуда напрямую отправляется заказчикам и, благодаря партнерству с РЖД, приходит всегда вовремя.
+                            Сырой пиломатериал отгружается спецплатформами, сухой пиломатериал доставляется полувагонами или 40-футовыми
+                            контейнерами.</p>
                         <p>Заготовка древесины производится в бассейне реки Ангары.
                             За ООО «Ангара лес» закреплен таежный участок для осуществления необходимых в производственной деятельности
                             лесозаготовок в годовом объеме более 400 тыс. куб. м.</p>
@@ -260,76 +280,76 @@
     <!-- // Side title block // -->
 
     <!-- // Media // -->
-        <div class="media media_bordered">
-            <div class="container">
-                <div class="media_content">
-                    <div class="description">
-                        <p>Предприятие использует собственный парк специальной техники VOLVO, DAOSAN, KOMATSU и других мировых брендов,
-                            а также автомашины для транспортировки сырья и готовой продукции SCANIA, MERCEDES
-                        </p>
-                        <p class="media_link">
-                            <a href="#">Смотреть</a>
-                            <button class="button_transparent">
-                                <svg width="80" height="25" viewBox="0 0 80 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M79.2885 11.5245L68.1632 0.399387C67.9059 0.141869 67.5624 0 67.1961 0C66.8299 0 66.4864 0.141869 66.2291 0.399387L65.4098 1.21849C64.8766 1.75222 64.8766 2.61969 65.4098 3.15262L74.752 12.4948L65.3994 21.8474C65.1421 22.1049 65 22.4482 65 22.8142C65 23.1807 65.1421 23.524 65.3994 23.7817L66.2187 24.6006C66.4762 24.8581 66.8195 25 67.1858 25C67.552 25 67.8955 24.8581 68.1528 24.6006L79.2885 13.4653C79.5464 13.207 79.6881 12.8621 79.6873 12.4954C79.6881 12.1273 79.5464 11.7826 79.2885 11.5245Z" fill="white"/>
-                                    <path d="M0.398998 11.5245L11.5243 0.399387C11.7816 0.141869 12.1251 0 12.4914 0C12.8576 0 13.2011 0.141869 13.4584 0.399387L14.2777 1.21849C14.8109 1.75222 14.8109 2.61969 14.2777 3.15262L4.93555 12.4948L14.2881 21.8474C14.5454 22.1049 14.6875 22.4482 14.6875 22.8142C14.6875 23.1807 14.5454 23.524 14.2881 23.7817L13.4688 24.6006C13.2113 24.8581 12.868 25 12.5017 25C12.1355 25 11.792 24.8581 11.5347 24.6006L0.398998 13.4653C0.141073 13.207 -0.000592054 12.8621 0.000220947 12.4954C-0.000592054 12.1273 0.141073 11.7826 0.398998 11.5245Z" fill="white"/>
-                                </svg>   
-                            </button>
-                        </p>                        
-                    </div>
-                    <div class="link_main">
-                        <a href='#'>
-                            <img src="../src/assets/images/index/video1.jpg" alt="">
+    <div class="media media_bordered">
+        <div class="container">
+            <div class="media_content">
+                <div class="link_main">
+                    <a href='#'>
+                        <img src="../src/assets/images/index/video1.jpg" alt="">
+                        <div class="play-control">
+                            <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle opacity="0.3" cx="62.5" cy="62.5" r="62.5" fill="white"/>
+                                <circle cx="63" cy="62" r="46" fill="white"/>
+                                <path d="M76 62.5L56.5 73.3253L56.5 51.6747L76 62.5Z" fill="#4975A5"/>
+                            </svg> 
+                        </div>
+                    </a>
+                </div>
+                <div class="description">
+                    <p>Предприятие использует собственный парк специальной техники VOLVO, DAOSAN, KOMATSU и других мировых брендов,
+                        а также автомашины для транспортировки сырья и готовой продукции SCANIA, MERCEDES
+                    </p>
+                    <p class="media_link">
+                        <a href="#">Смотреть видео</a>
+                        <button class="button_transparent">
+                            <svg width="80" height="25" viewBox="0 0 80 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M79.2885 11.5245L68.1632 0.399387C67.9059 0.141869 67.5624 0 67.1961 0C66.8299 0 66.4864 0.141869 66.2291 0.399387L65.4098 1.21849C64.8766 1.75222 64.8766 2.61969 65.4098 3.15262L74.752 12.4948L65.3994 21.8474C65.1421 22.1049 65 22.4482 65 22.8142C65 23.1807 65.1421 23.524 65.3994 23.7817L66.2187 24.6006C66.4762 24.8581 66.8195 25 67.1858 25C67.552 25 67.8955 24.8581 68.1528 24.6006L79.2885 13.4653C79.5464 13.207 79.6881 12.8621 79.6873 12.4954C79.6881 12.1273 79.5464 11.7826 79.2885 11.5245Z" fill="white"/>
+                                <path d="M0.398998 11.5245L11.5243 0.399387C11.7816 0.141869 12.1251 0 12.4914 0C12.8576 0 13.2011 0.141869 13.4584 0.399387L14.2777 1.21849C14.8109 1.75222 14.8109 2.61969 14.2777 3.15262L4.93555 12.4948L14.2881 21.8474C14.5454 22.1049 14.6875 22.4482 14.6875 22.8142C14.6875 23.1807 14.5454 23.524 14.2881 23.7817L13.4688 24.6006C13.2113 24.8581 12.868 25 12.5017 25C12.1355 25 11.792 24.8581 11.5347 24.6006L0.398998 13.4653C0.141073 13.207 -0.000592054 12.8621 0.000220947 12.4954C-0.000592054 12.1273 0.141073 11.7826 0.398998 11.5245Z" fill="white"/>
+                            </svg>   
+                        </button>
+                    </p>             
+                </div>
+                <div class="links_bottom">
+                    <div class="links_bottom_item">
+                        <a href="#">
+                            <img src="../src/assets/images/index/video2.jpg" alt="">
                             <div class="play-control">
-                                <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.3" cx="62.5" cy="62.5" r="62.5" fill="white"/>
-                                    <circle cx="63" cy="62" r="46" fill="white"/>
-                                    <path d="M76 62.5L56.5 73.3253L56.5 51.6747L76 62.5Z" fill="#4975A5"/>
-                                </svg> 
+                                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.3" cx="33.2095" cy="33.2095" r="33.2095" fill="white"/>
+                                    <circle cx="33.4752" cy="32.9439" r="24.4422" fill="white"/>
+                                    <path d="M40.3827 33.2095L30.0213 38.9616L30.0213 27.4575L40.3827 33.2095Z" fill="#4975A5"/>
+                                </svg>  
                             </div>
                         </a>
                     </div>
-                    <div class="links_bottom">
-                        <div class="links_bottom_item">
-                            <a href="#">
-                                <img src="../src/assets/images/index/video2.jpg" alt="">
-                                <div class="play-control">
-                                    <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle opacity="0.3" cx="33.2095" cy="33.2095" r="33.2095" fill="white"/>
-                                        <circle cx="33.4752" cy="32.9439" r="24.4422" fill="white"/>
-                                        <path d="M40.3827 33.2095L30.0213 38.9616L30.0213 27.4575L40.3827 33.2095Z" fill="#4975A5"/>
-                                    </svg>  
-                                </div>
-                            </a>
-                        </div>
-                        <div class="links_bottom_item">
-                            <a href="#">
-                                <img src="../src/assets/images/index/video3.jpg" alt="">
-                                <div class="play-control">
-                                    <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle opacity="0.3" cx="33.2095" cy="33.2095" r="33.2095" fill="white"/>
-                                        <circle cx="33.4752" cy="32.9439" r="24.4422" fill="white"/>
-                                        <path d="M40.3827 33.2095L30.0213 38.9616L30.0213 27.4575L40.3827 33.2095Z" fill="#4975A5"/>
-                                    </svg>  
-                                </div>
-                            </a>
-                        </div>
-                        <div class="links_bottom_item">
-                            <a href="#">
-                                <img src="../src/assets/images/index/video4.jpg" alt="">
-                                <div class="play-control">
-                                    <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle opacity="0.3" cx="33.2095" cy="33.2095" r="33.2095" fill="white"/>
-                                        <circle cx="33.4752" cy="32.9439" r="24.4422" fill="white"/>
-                                        <path d="M40.3827 33.2095L30.0213 38.9616L30.0213 27.4575L40.3827 33.2095Z" fill="#4975A5"/>
-                                    </svg>  
-                                </div>
-                            </a>
-                        </div>
+                    <div class="links_bottom_item">
+                        <a href="#">
+                            <img src="../src/assets/images/index/video3.jpg" alt="">
+                            <div class="play-control">
+                                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.3" cx="33.2095" cy="33.2095" r="33.2095" fill="white"/>
+                                    <circle cx="33.4752" cy="32.9439" r="24.4422" fill="white"/>
+                                    <path d="M40.3827 33.2095L30.0213 38.9616L30.0213 27.4575L40.3827 33.2095Z" fill="#4975A5"/>
+                                </svg>  
+                            </div>
+                        </a>
+                    </div>
+                    <div class="links_bottom_item">
+                        <a href="#">
+                            <img src="../src/assets/images/index/video4.jpg" alt="">
+                            <div class="play-control">
+                                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle opacity="0.3" cx="33.2095" cy="33.2095" r="33.2095" fill="white"/>
+                                    <circle cx="33.4752" cy="32.9439" r="24.4422" fill="white"/>
+                                    <path d="M40.3827 33.2095L30.0213 38.9616L30.0213 27.4575L40.3827 33.2095Z" fill="#4975A5"/>
+                                </svg>  
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!-- // Media // -->
 
     <!-- // Callback // -->
@@ -377,8 +397,8 @@
                         <div class="logo_container">
                             <img src="../src/assets/images/logo.png" alt="">
                         </div>
-                        <button>оставить заявку</button>
-                        <button>заказать звонок</button>
+                        <button class="button_dark">оставить заявку</button>
+                        <button class="button_dark">заказать звонок</button>
                     </div>
                     <div class="menu_container">
                         <div class="footer_title">Меню</div>
@@ -398,7 +418,7 @@
                             <span class="text_bold">E-mail: </span>Mail&#64;24les.ru 
                         </div>
                         <div class="footer_text">
-                            <span class="text_bold">Адрес: </span>г. Кодинск, ул. 2-я Коммунальная, Земельный участок 18
+                            <span class="text_bold">Адрес: </span>г. Кодинск,<br>ул. 2-я Коммунальная,<br>Земельный участок 18
                         </div>
                     </div>
                     <div class="links_container">

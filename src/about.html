@@ -8,48 +8,67 @@
 </head>
 <body>
     <!-- // Header // -->
-        <div class="header header_news">
-            <div class="container">
-                <div class="header_prolog">
-                    <div class="logo">
+    <div class="header">
+        <div id="menu_wrapper" class="menu_wrapper menu_wrapper_hidden"></div>
+        <div id="main_corp_menu" class="main_corp_menu menu_hidden">
+            <div id="menu_close_button" class="cross_sign">
+                <p>&#10006;</p>
+            </div>
+            <div class="main_corp_menu_list">
+                <ul>
+                    <li><a href="about.html">о нас</a></li>
+                    <li><a href="production.html">продукция</a></li>
+                    <li><a href="news.html">новости компании</a></li>
+                    <li><a href="machinery.html">оборудование и технологии</a></li>
+                    <li><a href="">контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header_content">
+                <div class="logo">
+                    <a href="index.html">
                         <img src="../src/assets/images/logo.png" alt="angarales kodinsk logo">
+                    </a>
+                </div>
+                <div class="contacts">
+                    <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div>
+                    <div class="social-icons">
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/vk.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/instagram.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/twitter.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/fb.png"></a>
+                        </div>
                     </div>
-                    <div class="contacts">
-                        <div class="callback-order"><a href="#">Заказать звонок</a></div>
-                        <div class="social-icons">
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/vk.png"></a>
-                            </div>
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/instagram.png"></a>
-                            </div>
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/twitter.png"></a>
-                            </div>
-                            <div class="social-icons_item">
-                                <a href="#"><img src="../src/assets/images/fb.png"></a>
-                            </div>
-                        </div>
-                        <div class="search">
-                            <input class="search_text" type="text" placeholder="Поиск">
-                            <button class="search_button button_transparent">
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.8167 13.933L10.5511 9.66739C11.3774 8.64679 11.8749 7.34992 11.8749 5.93744C11.8749 2.66373 9.21113 0 5.93742 0C2.6637 0 0 2.6637 0 5.93742C0 9.21113 2.66373 11.8749 5.93745 11.8749C7.34992 11.8749 8.64679 11.3774 9.66739 10.5511L13.933 14.8167C14.0548 14.9386 14.2148 14.9998 14.3749 14.9998C14.5349 14.9998 14.6949 14.9386 14.8167 14.8167C15.0611 14.5723 15.0611 14.1773 14.8167 13.933ZM5.93745 10.6249C3.35246 10.6249 1.25 8.5224 1.25 5.93742C1.25 3.35243 3.35246 1.24997 5.93745 1.24997C8.52243 1.24997 10.6249 3.35243 10.6249 5.93742C10.6249 8.5224 8.5224 10.6249 5.93745 10.6249Z" fill="white"/>
-                                    </svg>                                    
-                            </button>
-                        </div>
-                        <div class="lang">
-                            <button class="button_transparent">Ru</button>|
-                            <button class="button_transparent">Eng</button>|
-                            <button class="button_transparent">China</button>
-                        </div>
-                        <div class="menu">
-                            <button class="button_transparent">&#9776;</button>
+                    <div class="search">
+                        <input class="search_label" type="text" placeholder="Поиск">
+                        <button class="search_button button_transparent">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8167 13.933L10.5511 9.66739C11.3774 8.64679 11.8749 7.34992 11.8749 5.93744C11.8749 2.66373 9.21113 0 5.93742 0C2.6637 0 0 2.6637 0 5.93742C0 9.21113 2.66373 11.8749 5.93745 11.8749C7.34992 11.8749 8.64679 11.3774 9.66739 10.5511L13.933 14.8167C14.0548 14.9386 14.2148 14.9998 14.3749 14.9998C14.5349 14.9998 14.6949 14.9386 14.8167 14.8167C15.0611 14.5723 15.0611 14.1773 14.8167 13.933ZM5.93745 10.6249C3.35246 10.6249 1.25 8.5224 1.25 5.93742C1.25 3.35243 3.35246 1.24997 5.93745 1.24997C8.52243 1.24997 10.6249 3.35243 10.6249 5.93742C10.6249 8.5224 8.5224 10.6249 5.93745 10.6249Z" fill="white"/>
+                            </svg>                                    
+                        </button>
+                    </div>
+                    <div class="lang">
+                        <button class="button_transparent">Ru</button>|
+                        <button class="button_transparent">Eng</button>|
+                        <button class="button_transparent">China</button>
+                    </div>
+                    <div id="menu_open_button" class="menu_button">
+                        <div id="menu_open_button" class="menu_button">
+                            <button class="button_transparent" style="font-size:24px">&#9776;</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!-- // Header // -->
 
     <!-- // Title generic // -->
@@ -138,6 +157,7 @@
         </div>
     <!-- // Info // -->   
     <!-- // Economic effect // -->   
+    <div class="animated">
         <div class="economic-effect">
             <div class="container">
                 <div class="economic-effect_content">
@@ -147,20 +167,20 @@
                 </div>
             </div>
         </div>
+    </div>
     <!-- // Economic effect // -->   
-    <!-- // Effect points // -->   
+    <!-- // Effect points // -->  
+    <div class="animated">
         <div class="effect-points">
             <div class="container">
                 <div class="effect-points_content">
-                    <div class="image_right">
+                    <div class="images_block">
                         <img src="../src/assets/images/about/Rectangle 489.jpg" alt="">
-                    </div>
-                    <div class="image_right">
                         <img src="../src/assets/images/about/Rectangle 491.jpg" alt="">
                     </div>
                     <div class="point_item">
                         <div class="num">1</div>
-                        <div class="text" style="max-width:474px">ПОВЫШЕНИЕ УРОВНЯ ЗАНЯТОСТИ НАСЕЛЕНИЯ</div>
+                        <div class="text">ПОВЫШЕНИЕ УРОВНЯ ЗАНЯТОСТИ НАСЕЛЕНИЯ</div>
                     </div>
                     <div class="point_item">
                         <div class="num">2</div>
@@ -202,56 +222,59 @@
                 </div>
             </div>
         </div>
+    </div> 
     <!-- // Effect points // -->  
     
     <!-- // Info // -->   
-    <div class="region-effect">
-        <div class="container">
-            <div class="region-effect_content">
-                <div class="title">
-                    <h2>высооэффективное предприятие</h2>
-                </div>
-                <div class="text">
-                    <div class="poster">
-                        <div class="label">
-                            <h3>Крупный производитель <span class="filled_blue">в регионе</span></h3>
-                        </div>
+    <div class="animated">
+        <div class="region-effect">
+            <div class="container">
+                <div class="region-effect_content">
+                    <div class="title">
+                        <h2>высооэффективное предприятие</h2>
                     </div>
-                    <div class="row_lower">
-                        <div class="col-2-narrow">
-                            <div class="text_block">
-                                <p>
-                                    Ангара лес» входит в Топ-50 лесоперерабатывающих
-                                    компаний нашей страны. За три года в Кежемском
-                                    районе удалось с нуля создать современный завод,
-                                    предлагающий качественную пилопродукцию и
-                                    активно действующий на международном рынке.
-                                    С начала реализации проекта было заготовлено
-                                    897 тыс. м3 древесины, произведено более
-                                    220 тыс. м3 обрезных пиломатериалов, 1,7 тыс. м3
-                                    строганых пиломатериалов.
-                                </p>
+                    <div class="text">
+                        <div class="poster">
+                            <div class="label">
+                                <h3>Крупный производитель <span class="filled_blue">в регионе</span></h3>
                             </div>
                         </div>
-                        <div class="col-2-wide">
-                            <div class="text_block">
-                                <p>
-                                    Производство преимущественно экспортоориентированное. Основные объемы
-                                    поставляются в Японию, Китай и другие страны дальневосточного региона,
-                                    Юго-Восточной Азии. Отдельные партии отправляются в страны Европыи СНГ.
-                                    Также на предприятии производится около 40 тыс. тонн щепы для
-                                    использования в качестве топлива в муниципальных котельных Кежемского
-                                    района.
-                                </p>
-                                <p>
-                                    Первый поток лесопиленияуже к 2020-му году вышел на запланированную
-                                    проектную мощность. Предприятие выпускает более 105 тыс. куб. м
-                                    пиломатерилов с качеством, соответствующим требованиям ГОСТов. Завод
-                                    отгружает обрезные пиломатериалы, как естественной влажности (GR), так и
-                                    прошедшие камерную сушку (KD)
-                                </p>
+                        <div class="row_lower">
+                            <div class="col-2-narrow">
+                                <div class="text_block">
+                                    <p>
+                                        Ангара лес» входит в Топ-50 лесоперерабатывающих
+                                        компаний нашей страны. За три года в Кежемском
+                                        районе удалось с нуля создать современный завод,
+                                        предлагающий качественную пилопродукцию и
+                                        активно действующий на международном рынке.
+                                        С начала реализации проекта было заготовлено
+                                        897 тыс. м3 древесины, произведено более
+                                        220 тыс. м3 обрезных пиломатериалов, 1,7 тыс. м3
+                                        строганых пиломатериалов.
+                                    </p>
+                                </div>
                             </div>
-                        </div>  
+                            <div class="col-2-wide">
+                                <div class="text_block">
+                                    <p>
+                                        Производство преимущественно экспортоориентированное. Основные объемы
+                                        поставляются в Японию, Китай и другие страны дальневосточного региона,
+                                        Юго-Восточной Азии. Отдельные партии отправляются в страны Европыи СНГ.
+                                        Также на предприятии производится около 40 тыс. тонн щепы для
+                                        использования в качестве топлива в муниципальных котельных Кежемского
+                                        района.
+                                    </p>
+                                    <p>
+                                        Первый поток лесопиленияуже к 2020-му году вышел на запланированную
+                                        проектную мощность. Предприятие выпускает более 105 тыс. куб. м
+                                        пиломатерилов с качеством, соответствующим требованиям ГОСТов. Завод
+                                        отгружает обрезные пиломатериалы, как естественной влажности (GR), так и
+                                        прошедшие камерную сушку (KD)
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -260,20 +283,21 @@
 <!-- // Info // --> 
 
 <!-- // Counters // -->
-<div class="counters">
-    <div class="counters_container">
-        <div class="counter_item">
-            <h3>3113,115<span class="font_tiny"> млн. руб.</span></h3>
+<div class="counters counters_about">
+    <div class="counters_container" style="max-width:937px">
+        <div class="counter_item" style="max-width:570px">
+            <h3><span class="counter_display" data-target-value="3113,115" data-target-fixed="3">0</span><span class="font_tiny"> млн. руб.</span></h3>
             <p class="counter_item_label">полная проектная мощность объем отгруженной продукции</p>
         </div>
-        <div class="counter_item counter_item_narrow">
-            <h3>36<span class="font_tiny"> млр. руб.</span></h3>
+        <div class="counter_item" style="max-width:364px">
+            <h3><span class="counter_display" data-target-value="36" data-target-fixed="0">0</span><span class="font_tiny"> млр. руб.</span></h3>
             <p class="counter_item_label">поступления в бюджет Красноярского края</p>
         </div>
     </div>
 </div>
 <!-- // Counters // -->
 <!-- // Assortiment // -->
+<div class="animated">
     <div class="assortiment">
         <div class="container">
             <div class="assortiment_content">
@@ -341,16 +365,18 @@
             </div>
         </div>
     </div>
+</div>
 <!-- // Assortiment // -->
 <!-- // Fact and nums // -->
+<div class="animated">
     <div class="facts-nums">
         <div class="container">
             <div class="facts-nums_content">
-                <div class="title">
-                    <h2>цифры и факты</h2>
-                </div>
                 <div class="poster">
                     <img src="../src/assets/images/about/image6.jpg" alt="">
+                    <div class="title">
+                        <h2>цифры и факты</h2>
+                    </div>
                 </div>
                 <div class="point_list">
                     <div class="point_item">
@@ -381,8 +407,10 @@
             </div>
         </div>
     </div>
+</div>
 <!-- // Fact and nums // -->
 <!-- // Publications // -->
+<div class="animated">
     <div class="publications">
         <div class="container">
             <div class="publications_content">
@@ -418,10 +446,11 @@
             </div>
         </div>
     </div>
+</div>
 <!-- // News // --> 
 
-
     <!-- // Callback // -->
+    <div class="animated">
         <div class="callback callback_news">
             <div class="container">
                 <div class="callback_prolog">
@@ -457,6 +486,8 @@
                 </div>
             </div>
         </div>
+    </div>
+        
     <!-- // Callback // -->
     <!-- // Footer // -->
         <div class="footer footer_news">
@@ -466,8 +497,8 @@
                         <div class="logo_container">
                             <img src="../src/assets/images/logo.png" alt="">
                         </div>
-                        <button>оставить заявку</button>
-                        <button>заказать звонок</button>
+                        <button class="button_dark">оставить заявку</button>
+                        <button class="button_dark">заказать звонок</button>
                     </div>
                     <div class="menu_container">
                         <div class="footer_title">Меню</div>
@@ -487,7 +518,7 @@
                             <span class="text_bold">E-mail: </span>Mail&#64;24les.ru 
                         </div>
                         <div class="footer_text">
-                            <span class="text_bold">Адрес: </span>г. Кодинск, ул. 2-я Коммунальная, Земельный участок 18
+                            <span class="text_bold">Адрес: </span>г. Кодинск,<br>ул. 2-я Коммунальная,<br>Земельный участок 18
                         </div>
                     </div>
                     <div class="links_container">
@@ -507,6 +538,7 @@
                 </div>
             </div>
         </div>
-    <!-- // Footer // -->
+
+<!-- // Footer // -->
 </body>
 </html>

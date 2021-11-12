@@ -8,46 +8,70 @@ import './assets/scss/social_politic.scss'
 import './assets/scss/about.scss'
 
 window.onload = () => {
-    if (window.innerWidth > 1203) {
-        const animatedBlocks = document.querySelectorAll(".animated");
-        const counterDisplays = document.querySelectorAll(".counter");
+    const menuCloseButton = document.getElementById("menu_close_button");
+    const menuOpenButton = document.getElementById("menu_open_button");
 
-        const animateVisibility = (elt) => {
-            if (elt.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
-                elt.style.opacity = 1;
+    const menuWrapper = document.getElementById("menu_wrapper");
+    const mainCorpMenu = document.getElementById("main_corp_menu");
+
+    menuCloseButton.addEventListener('click', () => {
+        mainCorpMenu.classList.add('menu_hidden');
+        menuWrapper.classList.add('menu_wrapper_hidden');
+    })
+
+    menuOpenButton.addEventListener('click', () => {
+        mainCorpMenu.classList.remove('menu_hidden');
+        menuWrapper.classList.remove('menu_wrapper_hidden');
+    })
+
+    window.addEventListener('scroll', () => {
+        mainCorpMenu.classList.add('menu_hidden');
+        menuWrapper.classList.add('menu_wrapper_hidden');
+    });
+
+    const counterDisplays = document.querySelectorAll(".counter_display");
+    const counterBox = document.querySelector(".counters");
+    const animationTime = 5000;
+    const animationSpeed = 100;
+
+    const animateIncrease = (elt, animationStep = 0) => {
+        const targetValue = elt.dataset.targetValue;
+        const targetFixed = elt.dataset.targetFixed;
+        const increaseValue = targetValue / (animationTime / animationSpeed);
+
+        const getCurrentValue = (animationStep) => animationStep * increaseValue;
+
+        const animate = () => {
+            elt.innerText = getCurrentValue(animationStep).toFixed(targetFixed).replace('.', ',');
+            animationStep++;
+            if (elt.innerText < targetValue) {
+                requestAnimationFrame(animate);
+            } else {
+                elt.innerText = targetValue.replace('.', ',');
             }
         }
 
-        const animateCounters = elt => {
-            if (elt.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
-                const targetValue = elt.dataset.targetValue;
-                const targetFixed = elt.dataset.targetFixed;
-                const animationTime = 5000;
-                const animationSpeed = 50;
-                const increaseValue = targetValue / (animationTime / animationSpeed);
-
-                const getCurrentValue = (animationStep) => animationStep * increaseValue;
-
-                let animationStep = 0;
-                const animateIcrease = () => {
-                    setTimeout(() => {
-                        elt.innerText = getCurrentValue(animationStep++).toFixed(targetFixed);
-                        if (elt.innerText < targetValue) {
-                            animateIcrease();
-                        } else {
-                            elt.innerText = targetValue;
-                        }
-                    }, animationSpeed);
-                }
-
-                animateIcrease();
-            }
-        }
-
-        window.onscroll = () => animatedBlocks.forEach(animateVisibility);
-        // window.onscroll = () => counterDisplays.forEach(animateCounters);
+        animate();  
     }
-    
 
+    const counterHandler = () => {
+        if (counterBox.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
+            window.removeEventListener('scroll', counterHandler);
+            counterDisplays.forEach(elt => {
+                animateIncrease(elt);
+            });
+        }
+    }
 
+    window.addEventListener('scroll', counterHandler); 
+
+    const animatedBlocks = document.querySelectorAll(".animated");
+
+    const animateVisibility = (elt) => {
+        if (elt.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
+            elt.style.opacity = 1;
+        }
+    }
+
+    window.onscroll = () => animatedBlocks.forEach(animateVisibility);
 }
