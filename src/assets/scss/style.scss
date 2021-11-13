@@ -37,10 +37,12 @@ body {
     background-color: $common_black;
     opacity: .5;
     transition: all 1s;
+    visibility: visible;
 }
 
 .menu_wrapper_hidden {
     opacity: 0;
+    visibility: hidden;
 }
 
 .main_corp_menu {
