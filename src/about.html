@@ -9,19 +9,44 @@
 <body>
     <!-- // Header // -->
     <div class="header">
-        <div id="menu_wrapper" class="menu_wrapper menu_wrapper_hidden"></div>
         <div id="main_corp_menu" class="main_corp_menu menu_hidden">
-            <div id="menu_close_button" class="cross_sign">
-                <p>&#10006;</p>
+            <div class="menu_top">
+                <div id="menu_close_button" class="cross_sign">
+                    <p>&#10006;</p>
+                </div>
+                <div class="main_corp_menu_list">
+                    <ul>
+                        <li><a href="about.html">о нас</a></li>
+                        <li><a href="production.html">продукция</a></li>
+                        <li><a href="news.html">новости компании</a></li>
+                        <li><a href="machinery.html">оборудование и технологии</a></li>
+                        <li><a href="">контакты</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="main_corp_menu_list">
-                <ul>
-                    <li><a href="about.html">о нас</a></li>
-                    <li><a href="production.html">продукция</a></li>
-                    <li><a href="news.html">новости компании</a></li>
-                    <li><a href="machinery.html">оборудование и технологии</a></li>
-                    <li><a href="">контакты</a></li>
-                </ul>
+            <div class="menu_bottom">
+                <div class="social-icons">
+                    <div class="social-icons_item">
+                        <a href="#"><img src="../src/assets/images/vk.png"></a>
+                    </div>
+                    <div class="social-icons_item">
+                        <a href="#"><img src="../src/assets/images/instagram.png"></a>
+                    </div>
+                    <div class="social-icons_item">
+                        <a href="#"><img src="../src/assets/images/twitter.png"></a>
+                    </div>
+                    <div class="social-icons_item">
+                        <a href="#"><img src="../src/assets/images/fb.png"></a>
+                    </div>
+                </div>
+                <div class="lower_row">
+                    <div class="lang">
+                        <button class="button_transparent">Ru</button>|
+                        <button class="button_transparent">Eng</button>|
+                        <button class="button_transparent">China</button>
+                    </div>
+                    <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div> 
+                </div>
             </div>
         </div>
         <div class="container">
@@ -175,8 +200,8 @@
             <div class="container">
                 <div class="effect-points_content">
                     <div class="images_block">
-                        <img src="../src/assets/images/about/Rectangle 489.jpg" alt="">
                         <img src="../src/assets/images/about/Rectangle 491.jpg" alt="">
+                        <img src="../src/assets/images/about/Rectangle 489.jpg" alt="">
                     </div>
                     <div class="point_item">
                         <div class="num">1</div>
@@ -284,14 +309,20 @@
 
 <!-- // Counters // -->
 <div class="counters counters_about">
-    <div class="counters_container" style="max-width:937px">
-        <div class="counter_item" style="max-width:570px">
-            <h3><span class="counter_display" data-target-value="3113,115" data-target-fixed="3">0</span><span class="font_tiny"> млн. руб.</span></h3>
-            <p class="counter_item_label">полная проектная мощность объем отгруженной продукции</p>
+    <div class="counters_container" style="max-width:1030px">
+        <div class="counter_item" style="max-width:477px">
+            <div class="counter_row">
+                <div class="counter_display" data-target-value="3113,115" data-target-fixed="3">0</div>
+                <div class="font_tiny">млн.руб.</div>
+            </div>
+            <div class="counter_item_label">полная проектная мощность объем отгруженной продукции</div>
         </div>
-        <div class="counter_item" style="max-width:364px">
-            <h3><span class="counter_display" data-target-value="36" data-target-fixed="0">0</span><span class="font_tiny"> млр. руб.</span></h3>
-            <p class="counter_item_label">поступления в бюджет Красноярского края</p>
+        <div class="counter_item" style="max-width:345px">
+            <div class="counter_row">
+                <div class="counter_display" data-target-value="36" data-target-fixed="0">0</div>
+                <div class="font_tiny">млр.руб.</div>
+            </div>
+            <div class="counter_item_label">поступления в бюджет Красноярского края</div>
         </div>
     </div>
 </div>
@@ -425,7 +456,7 @@
                             С другой стороны, граница обучения кадров в значительной степени обусловливает важность поэтапного и последовательного развития общества.
                         </div>
                         <div class="label">
-                            <img src="" alt="">
+                            <img src="../src/assets/images/about/ved.jpg" alt="">
                         </div>
                     </div>
                     <div class="publication_item">
@@ -434,12 +465,18 @@
                         <div class="text">
                             С другой стороны, граница обучения кадров в значительной степени обусловливает важность поэтапного и последовательного развития общества.
                         </div>
+                        <div class="label">
+                            <img src="../src/assets/images/about/ved.jpg" alt="">
+                        </div>
                     </div>
                     <div class="publication_item">
                         <img src="../src/assets/images/about/pub3.jpg" alt="">
                         <div class="pub_title">Реализация государственного законопроекта в рамках установленных целей</div>
                         <div class="text">
                             С другой стороны, граница обучения кадров в значительной степени обусловливает важность поэтапного и последовательного развития общества.
+                        </div>
+                        <div class="label">
+                            <img src="../src/assets/images/about/ved.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -503,10 +540,10 @@
                     <div class="menu_container">
                         <div class="footer_title">Меню</div>
                         <ul>
-                            <li><a href="#" class="footer_text">О нас</a></li>
-                            <li><a href="#" class="footer_text">Оборудование и производство</a></li>
-                            <li><a href="#" class="footer_text">Продукция</a></li>
-                            <li><a href="#" class="footer_text">Новости</a></li>
+                            <li><a href="about.html" class="footer_text">О нас</a></li>
+                            <li><a href="machinery.html" class="footer_text">Оборудование и производство</a></li>
+                            <li><a href="production.html" class="footer_text">Продукция</a></li>
+                            <li><a href="news.html" class="footer_text">Новости</a></li>
                         </ul>
                     </div>
                     <div class="address_container">
