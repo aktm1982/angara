@@ -566,7 +566,6 @@
     }
 
     .counters_about {
-        height: 515px;
         padding-left: 92px;
 
         .counters_container {
@@ -652,7 +651,7 @@
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 760px) {
     .title-generic_about {
         .title-generic_content {
             h2 {

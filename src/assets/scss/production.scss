@@ -2,6 +2,7 @@
 
 .title-generic_production {
     background: url(../images/production/1\ 916839258.jpg) center/cover no-repeat;
+    overflow: hidden;
 }
 
 .production-types {
@@ -193,6 +194,7 @@
             margin: auto;
             .item {
                 flex-direction: column;
+                width: 516px;
 
                 .text{
                     padding-top: 2%;
@@ -211,10 +213,10 @@
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 760px) {
     .production-types {
         height: auto;
-        padding-bottom: 32px;
+        padding-bottom: 40px;
         &_content {
             padding-top: 36px;
             width: 96%;
@@ -235,7 +237,7 @@
 
     .material-types {
         height: auto;
-        padding-bottom: 32px;
+        padding-bottom: 14px;
         &_content {
             width: 96%;
             margin: auto;
@@ -252,29 +254,56 @@
                     flex-direction: column;
                     text-align: center;
                     padding-bottom: 23px;
+
+                    .text {
+                        padding-left: 0;
+                        padding-top: 21px;
+                        padding-bottom: 16px;
+                    }
                 }
             }
         }
     }
 
     .products {
+        padding-top: 56px;
+        padding-bottom: 40px;
         &_content {
             width: 100%;
             margin: auto;
             .item {
-                flex-direction: column;
+                max-width: 350px;
+                margin: auto;
+                padding-bottom: 80px;
+
+                .image {
+                    flex: none;
+                    
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
 
                 .text{
-                    padding-top: 2%;
+                    padding-top: 7%;
                     padding-left: 0;
-                    width: 70%;
+                    width: 78%;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
                 } 
 
                 .frame-box {
-                    top: 5%;
-                    left: 7%;
-                    width: 86%;
-                    height: 90%;
+                    top: 3%;
+                    left: 5%;
+                    width: 90%;
+                    height: 88%;
                 }
             }
         }

@@ -40,7 +40,7 @@ body {
     &_item {
         display: flex;
         align-items: center;
-        height: 171px;
+        height: 162px;
         width: 90%;
 
         .icon {
@@ -87,6 +87,11 @@ body {
             line-height: 53px;
             text-align: center;
         }
+
+        &_item {
+            padding-bottom: 0;
+        }
+
         .col_item {
             width: 70%;
 
@@ -94,6 +99,12 @@ body {
                 width: 100%
             }
 
+        }
+    }
+
+    .gallery-block {
+        &_content {
+            padding-top: 12px;
         }
     }
 
@@ -126,5 +137,74 @@ body {
 
     .media_bordered {
         margin-top: 36px;
+        margin-bottom: 116px;
+    }
+}
+
+@media (max-width: 770px) {
+    .title-generic_machinery {
+        .title-generic_content {
+            h2 {
+                font-size: 36px;
+
+                .reflection {
+                    font-size: 81px;
+                }
+            }
+        }
+    }
+
+    .released-projects {
+        padding-top: 44px;
+        .col_item {
+            width: 100%;
+            .released-projects_item {
+                height: 145px;
+                flex-direction: column;
+                h2 {
+                    font-size: 33px;
+                    line-height: 43px;
+                }
+
+                .text {
+                    padding-left: 0;
+                    padding-top: 12px;
+                    h3 {
+                        font-size: 18px;
+                        line-height: 26px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .gallery-block_content {
+        flex-wrap: wrap;
+        .gallery_item {
+            padding-bottom: 6px;
+            width: 48.5%;
+        }
+    }
+
+    .side-title-block_content {
+
+        .block-title_vertical {
+            top: 334px;
+
+            h2 {
+                font-size: 71px;
+                line-height: 60px;
+            }
+        }
+        .image {
+            img {
+                position: relative;
+                top: 0;
+                left: 31%;
+                width: 271px;
+                height: auto;
+            }
+        }
     }
 }

@@ -31,8 +31,8 @@ window.onload = () => {
 
     const counterDisplays = document.querySelectorAll(".counter_display");
     const counterBox = document.querySelector(".counters");
-    const animationTime = 5000;
-    const animationSpeed = 20;
+    const animationTime = 10000;
+    const animationSpeed = 500;
 
     const animateIncrease = (elt, animationStep = 0) => {
         const targetValue = elt.dataset.targetValue;

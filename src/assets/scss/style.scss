@@ -392,6 +392,7 @@ body {
     &_content {
         position: relative;
         padding-top: 110px;
+        overflow: hidden;
 
         h2 {
             font-weight: bold;
@@ -407,7 +408,7 @@ body {
             position: absolute;
             top: 43%;
             font-weight: bold;
-            font-size: 176px;
+            font-size: 135px;
             line-height: 142px;
             text-align: center;
             text-transform: uppercase;
@@ -1996,7 +1997,7 @@ body {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 760px) {
 
     .menu_wrapper  {
         display: none;
@@ -2119,7 +2120,7 @@ body {
     }
 
     .counters {
-        height: 489px;
+        height: 409px;
         padding-left: 4%;
     
         &_container {
@@ -2127,8 +2128,8 @@ body {
 
             .counter_item {
                 .counter_row {
-                    flex-direction: column;
-                    align-items: flex-start;
+                    // flex-direction: column;
+                    align-items: flex-end;
 
                     .counter_display {
                         font-size: 68px;
@@ -2136,8 +2137,8 @@ body {
                     }
     
                     .font_tiny {
-                        font-size: 24px;
-                        line-height: 29px;
+                        font-size: 20px;
+                        line-height: 16px;
                     }
                 }
 
