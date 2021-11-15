@@ -8,16 +8,24 @@
 </head>
 <body>
     <!-- // Header // -->
-    <div class="header">
-        <div class="container">
-            <div class="header_content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="../src/assets/images/logo.png" alt="angarales kodinsk logo">
-                    </a>
+        <div class="main_corp main_corp_dummy">
+            <div id="menu_wrapper" class="menu_wrapper menu_wrapper_hidden"></div>
+            <div id="main_corp_menu" class="main_corp_menu menu_hidden">
+                <div class="menu_top">
+                    <div id="menu_close_button" class="cross_sign">
+                        <p>&#10006;</p>
+                    </div>
+                    <div class="main_corp_menu_list">
+                        <ul>
+                            <li><a href="about.html">о нас</a></li>
+                            <li><a href="production.html">продукция</a></li>
+                            <li><a href="news.html">новости компании</a></li>
+                            <li><a href="machinery.html">оборудование и технологии</a></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="contacts">
-                    <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div>
+                <div class="menu_bottom">
                     <div class="social-icons">
                         <div class="social-icons_item">
                             <a href="#"><img src="../src/assets/images/vk.png"></a>
@@ -32,104 +40,146 @@
                             <a href="#"><img src="../src/assets/images/fb.png"></a>
                         </div>
                     </div>
-                    <div class="search">
-                        <input class="search_label" type="text" placeholder="Поиск">
-                        <button class="search_button button_transparent">
-                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.8167 13.933L10.5511 9.66739C11.3774 8.64679 11.8749 7.34992 11.8749 5.93744C11.8749 2.66373 9.21113 0 5.93742 0C2.6637 0 0 2.6637 0 5.93742C0 9.21113 2.66373 11.8749 5.93745 11.8749C7.34992 11.8749 8.64679 11.3774 9.66739 10.5511L13.933 14.8167C14.0548 14.9386 14.2148 14.9998 14.3749 14.9998C14.5349 14.9998 14.6949 14.9386 14.8167 14.8167C15.0611 14.5723 15.0611 14.1773 14.8167 13.933ZM5.93745 10.6249C3.35246 10.6249 1.25 8.5224 1.25 5.93742C1.25 3.35243 3.35246 1.24997 5.93745 1.24997C8.52243 1.24997 10.6249 3.35243 10.6249 5.93742C10.6249 8.5224 8.5224 10.6249 5.93745 10.6249Z" fill="white"/>
-                            </svg>                                    
-                        </button>
+                    <div class="lower_row">
+                        <div class="lang">
+                            <button class="button_transparent">Ru</button>|
+                            <button class="button_transparent">Eng</button>|
+                            <button class="button_transparent">China</button>
+                        </div>
+                        <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div> 
                     </div>
-                    <div class="lang">
-                        <button class="button_transparent">Ru</button>|
-                        <button class="button_transparent">Eng</button>|
-                        <button class="button_transparent">China</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header_content">
+                    <div class="logo">
+                        <img src="../src/assets/images/logo.png" alt="angarales kodinsk logo">
                     </div>
-                    <div id="menu_open_button" class="menu_button">
-                        <button class="button_transparent" style="font-size:24px">&#9776;</button>
+                    <div class="company-description">
+                        <div class="activities">
+                            <ul>
+                                <li>Лесозаготовка</li>
+                                <li class="marker_dot">&bull;</li>
+                                <li>Лесопиление</li>
+                                <li class="marker_dot">&bull;</li>
+                                <li>Производство</li>
+                                <li class="marker_dot">&bull;</li>
+                                <li>Восстановление леса</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_corp_content">
+                    <div class="company-name">
+                        <h1>Ангара лес</h1>
+                    </div>
+                    <div class="dummy_content">
+                        <h2>Сайт находится <span class="filled_blue">в разработке</span></h2>
+                        <div class="dummy_callback_label">
+                            По вопросам трудоустройства заполните форму заявки
+                        </div>
+                        <div class="callback callback_dummy">
+                            <form action="" class="callback_form">
+                                <div class="input_block">
+                                    <label for="client_phone">Ваш телефон</label>
+                                    <input type="text" name="client_phone" placeholder="+7 (    ) ___ __ __ __">
+                                </div>
+                                <div class="input_block">
+                                    <label for="client_mail">Ваш e-mail</label>
+                                    <input type="email" name="client_mail" placeholder="vvvv@gmail.com">
+                                </div>
+                                <div class="input_block">
+                                    <label for="client_message">Ваше собщение</label>
+                                    <input type="text" name="client_message">
+                                </div>
+                                <button class="button_dark">оставить заявку</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- // Header // -->
     <!-- // About // -->
-        <div class="about">
-            <div class="container">
-                <div class="about_content">
-                    <div class="image">
-                        <img src="../src/assets/images/dummy/shutterstock_50732677 1.jpg" alt="Shutterstock">
-                    </div>
-                    <div class="text">
-                        <h2>О компании</h2>
-                        <div class="text_container"><b>Ангара лес» входит в Топ-50 лесоперерабатывающих компаний нашей страны.</b> За три года в Кежемском
-                            районе удалось с нуля создать современный завод, предлагающий качественную пилопродукцию и
-                            активно действующий на международном рынке.
+        <div class="animated">
+            <div class="about">
+                <div class="container">
+                    <div class="about_content">
+                        <div class="image">
+                            <img src="../src/assets/images/index/shutterstock_50732677 1.jpg" alt="Shutterstock">
                         </div>
-                    </div>
-                    <div class="schema">
-                        <table>
-                            <tr>
-                                <td width="45" class="marker-cell">
-                                    <div class="marker">
-                                        <svg width="17" height="17">
-                                            <circle cx="9" cy="8" r="8" fill="#4574A3"/>
-                                        </svg>
-                                    </div>
-                                    <div class="rect"></div>
-                                </td>
-                                <td>Современные объекты лесозаготоительной структуры</td>
-                            </tr>
-                            <tr>
-                                <td class="marker-cell">
-                                    <div class="marker">
-                                        <svg width="17" height="17">
-                                            <circle cx="9" cy="8" r="8" fill="#4574A3"/>
-                                        </svg>
-                                    </div>
-                                    <div class="rect"></div>
-                                </td>
-                                <td>Непрерывная технология леопереработки</td>
-                            </tr>
-                            <tr>
-                                <td class="marker-cell">
-                                    <div class="marker">
-                                        <svg width="17" height="17">
-                                            <circle cx="9" cy="8" r="8" fill="#4574A3"/>
-                                        </svg>
-                                    </div>
-                                    <div class="rect"></div>
-                                </td>
-                                <td>Сбалансированный товарный ассортимент</td>
-                            </tr>
-                            <tr>
-                                <td class="marker-cell">
-                                    <div class="marker">
-                                        <svg width="17" height="17">
-                                            <circle cx="9" cy="8" r="8" fill="#4574A3"/>
-                                        </svg>
-                                    </div>
-                                    <div class="rect"></div>
-                                </td>
-                                <td>Безотходное производство</td>
-                            </tr>
-                            <tr>
-                                <td class="marker-cell">
-                                    <div class="marker">
-                                        <svg width="17" height="17">
-                                            <circle cx="9" cy="8" r="8" fill="#4574A3"/>
-                                        </svg>
-                                    </div>
-                                </td>
-                                <td>Производство биоэнергетической продукции</td>
-                            </tr>
-                        </table>
+                        <div class="text">
+                            <h2>О компании</h2>
+                            <div class="text_container"><b>Ангара лес» входит в Топ-50 лесоперерабатывающих компаний нашей страны.</b> За три года в Кежемском
+                                районе удалось с нуля создать современный завод, предлагающий качественную пилопродукцию и
+                                активно действующий на международном рынке.
+                            </div>
+                        </div>
+                        <div class="schema">
+                            <table>
+                                <tr>
+                                    <td width="45" class="marker-cell">
+                                        <div class="marker">
+                                            <svg width="17" height="17">
+                                                <circle cx="9" cy="8" r="8" fill="#4574A3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="rect"></div>
+                                    </td>
+                                    <td class="marker_label">Современные объекты лесозаготоительной структуры</td>
+                                </tr>
+                                <tr>
+                                    <td class="marker-cell">
+                                        <div class="marker">
+                                            <svg width="17" height="17">
+                                                <circle cx="9" cy="8" r="8" fill="#4574A3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="rect"></div>
+                                    </td>
+                                    <td class="marker_label">Непрерывная технология леопереработки</td>
+                                </tr>
+                                <tr>
+                                    <td class="marker-cell">
+                                        <div class="marker">
+                                            <svg width="17" height="17">
+                                                <circle cx="9" cy="8" r="8" fill="#4574A3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="rect"></div>
+                                    </td>
+                                    <td class="marker_label">Сбалансированный товарный ассортимент</td>
+                                </tr>
+                                <tr>
+                                    <td class="marker-cell">
+                                        <div class="marker">
+                                            <svg width="17" height="17">
+                                                <circle cx="9" cy="8" r="8" fill="#4574A3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="rect"></div>
+                                    </td>
+                                    <td class="marker_label">Безотходное производство</td>
+                                </tr>
+                                <tr>
+                                    <td class="marker-cell">
+                                        <div class="marker">
+                                            <svg width="17" height="17">
+                                                <circle cx="9" cy="8" r="8" fill="#4574A3"/>
+                                            </svg>
+                                        </div>
+                                    </td>
+                                    <td class="marker_label">Производство биоэнергетической продукции</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     <!-- // About // -->
     <!-- // Local jobs // -->
+    <div class="animated">
         <div class="local-jobs">
             <div class="container">
                 <div class="local-jobs_content">
@@ -262,8 +312,10 @@
                 </div>
             </div>
         </div>
+    </div>
     <!-- // Local jobs // -->
     <!-- // Footer // -->
+    <div class="animated">
         <div class="footer_dummy">
             <div class="container">
                 <div class="footer_dummy_content">
@@ -278,8 +330,8 @@
                 Связаться с нами Связаться с нами Связаться с нами
             </div>
         </div>
+    </div>
     <!-- // Footer // -->
-
 </body>
 </html>
 
