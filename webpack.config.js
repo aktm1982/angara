@@ -6,7 +6,7 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
+const filename = (ext) => isDev ? `[name].${ext}` : `[name].${ext}`;
 
 process.on('warning', (warning) => {
     console.log(warning.stack, ' DATA DEBUG');
@@ -80,9 +80,9 @@ module.exports = {
         publicPath: '/'
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
-        publicPath: '/',
+        contentBase: path.join(__dirname, './public'),
         open: true,
+        compress: true,
         watchContentBase: true,
         port: 8080,
     },
@@ -124,18 +124,19 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
+              test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
                 use: [{
                   loader: 'file-loader',
                   options: {
-                    name: `./img/${filename('[ext]')}`
+                    name: `${filename('[ext]')}`,
+                    outputPath :  './img/',
                   }
                 }],
             },
             {
-                test: /\.(?:|eot|ttf|woff|woff2|otf)$/,
+              test: /\.(?:|eot|ttf|woff|woff2|otf)$/,
                 use: [{
-                  loader: 'file-loader',
+                  loader: 'file-loader',                  
                   options: {
                     name: `./fonts/${filename('[ext]')}`
                   }

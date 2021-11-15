@@ -25,7 +25,7 @@ body {
 }
 
 .animated {
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s;
 }
 
@@ -1881,7 +1881,7 @@ body {
 
             .news_block {
                 &_item_3 {
-                    display: none;
+                    // display: none;
                 }
             }
         }
@@ -2500,7 +2500,7 @@ body {
                 margin: auto;
                 padding-top: 84px;
                 &_item_2 {
-                    display: none;
+                    // display: none;
                 }
             }
         }
