@@ -888,7 +888,7 @@ body {
 .production {
     position: relative;
     height: 1523px;
-    background: linear-gradient(20deg, rgba(69, 69, 69, 1.0) 80%, rgba(69, 69, 69, 0.6) 90%),
+    background: linear-gradient(8deg, rgba(69, 69, 69, 1.0) 83%, rgba(69, 69, 69, 0.6) 90%),
     url(../images/index/forest-3728911_1280.jpg) top left/100% no-repeat;
     color: $common_white;
 
@@ -1706,7 +1706,7 @@ body {
     }
 
     .technologies {
-        height: 807px;
+        height: 880px;
         &_content {
             .title {
                 top: 352px;

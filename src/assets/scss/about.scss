@@ -730,6 +730,18 @@
         .reflection {
             top: 130px;
         }
+
+        .point_item {
+            .num {
+                font-size: 48px;
+                line-height: 68px;
+                width: 46px;
+            }
+
+            .text {
+                font-size: 17px;
+            }
+        }
     }
 
     .region-effect_content {
@@ -759,11 +771,11 @@
         }
 
         .row_lower {
-            padding-left: 68px;
+            padding-left: 54px;
             padding-top: 38px;
 
             p {
-                padding-bottom: 36px;;
+                padding-bottom: 27px;
             }
         }
     }

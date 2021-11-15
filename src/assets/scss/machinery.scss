@@ -190,21 +190,37 @@ body {
     .side-title-block_content {
 
         .block-title_vertical {
-            top: 334px;
-
-            h2 {
-                font-size: 71px;
-                line-height: 60px;
-            }
+            top: 305px;
+            left: -214px;
+            font-size: 71px;
+            line-height: 60px;
         }
         .image {
+            width: 64%;
             img {
                 position: relative;
                 top: 0;
                 left: 31%;
-                width: 271px;
+                width: 281px;
                 height: auto;
             }
         }
+
+        .text {
+            width: 100%;
+            padding-top: 11px;
+
+            p {
+                padding-bottom: 13px;
+            }
+
+            .anounce_text {
+                padding-left: 69px;
+            }
+        }
+    }
+
+    .media_bordered {
+        margin-bottom: 0;
     }
 }
