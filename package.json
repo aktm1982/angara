@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "imask": "^6.0.7",
+    "lightgallery": "^2.3.0",
     "swiper": "^6.6.2"
   },
   "browserslist": [
