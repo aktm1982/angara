@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
     background-color: $corp_white_color;
     font-family: 'Montserrat', sans-serif;
+    color: $common_white;
 }
 
 .animated {
@@ -29,6 +30,7 @@ body {
 }
 
 .menu_wrapper {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -46,7 +48,10 @@ body {
 }
 
 .main_corp_menu {
-    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     padding-left: 40px;
     position: fixed;
     top: 0;
@@ -59,6 +64,14 @@ body {
     font-size: 30px;
     text-align: center;
     color: $common_white;
+
+    .menu_top, .menu_bottom {
+        width: 100%;
+    }
+
+    .menu_top {
+        padding-top: 32px;
+    }
 
     .cross_sign {
         margin: auto;
@@ -91,7 +104,6 @@ body {
         justify-content: space-between;
         margin: 0 33px 0 33px;
         width: 140px;
-        padding-top: 72%;
 
         img {
             height: 20px;
@@ -109,6 +121,7 @@ body {
     
         .callback-order {
             text-align: left;
+            padding-bottom: 10%;
     
             a {
                 color: #fff;
@@ -381,6 +394,7 @@ body {
     &_content {
         position: relative;
         padding-top: 110px;
+        overflow: hidden;
 
         h2 {
             font-weight: bold;
@@ -396,7 +410,7 @@ body {
             position: absolute;
             top: 43%;
             font-weight: bold;
-            font-size: 176px;
+            font-size: 135px;
             line-height: 142px;
             text-align: center;
             text-transform: uppercase;
@@ -476,13 +490,19 @@ body {
         .counter_item {
             flex: none;
 
-            h3 {
-                font-size: 92px;
-                font-weight: 700;
-                line-height: 112px;
-                letter-spacing: 0em;
-                text-align: left;
-        
+            .counter_row {
+                display: flex;
+                align-items: flex-end;
+
+                .counter_display {
+                    font-size: 92px;
+                    font-weight: 700;
+                    line-height: 112px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    padding-right: 12px;
+                }
+            
                 .font_tiny {
                     font-family: Montserrat;
                     font-size: 24px;
@@ -490,9 +510,10 @@ body {
                     line-height: 29px;
                     letter-spacing: 0.1em;
                     text-align: left;
+                    padding-bottom: 16px;
                 }
             }
-
+            
             &_label {
                 font-size: 26px;
                 font-weight: 500;
@@ -835,6 +856,7 @@ body {
                 border-collapse: collapse;
                 tr {
                     td {
+                        padding: 25px 43px 25px 0;
                         border-bottom: 1px solid #919191;
                         padding-right: 43px;
     
@@ -868,7 +890,7 @@ body {
 .production {
     position: relative;
     height: 1523px;
-    background: linear-gradient(20deg, rgba(69, 69, 69, 1.0) 80%, rgba(69, 69, 69, 0.6) 90%),
+    background: linear-gradient(8deg, rgba(69, 69, 69, 1.0) 83%, rgba(69, 69, 69, 0.6) 90%),
     url(../images/index/forest-3728911_1280.jpg) top left/100% no-repeat;
     color: $common_white;
 
@@ -1028,8 +1050,8 @@ body {
                 li {
                     display: flex;
                     align-items: center;
-                    padding: 23px 0 34px;
-                    border-top: 1px solid $common_white;
+                    padding: 23px 0;
+                    border-top: 1.5px solid $common_white;
                     font-weight: bold;
                     font-size: 40px;
                     line-height: 87px;
@@ -1140,7 +1162,7 @@ body {
 
                 svg {
                     position: relative;
-                    top: 10px;
+                    top: 6px;
                     left: 27px;
                 }
 
@@ -1154,6 +1176,10 @@ body {
             display: flex;
             justify-content: space-between;
             padding-top: 22px;
+
+            a {
+                text-decoration: none;
+            }
 
             &_item {
                 max-width: 390px;
@@ -1186,6 +1212,10 @@ body {
                     line-height: 20px;
                     color: $corp_gray_liter-color;
                 }
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
 
@@ -1307,22 +1337,30 @@ body {
         padding-bottom: 49px;
 
         .hr_button {
-            font-family: 'Montserrat', sans-serif;
-            background: none;
-            outline: none;
+            background: #DDDFD4;
+            border: 2px solid #5B5B5B;
             width: 48%;
             padding: 52px 0;
+            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: $corp_gray-mid-color;
-            border: 2px solid #5B5B5B;
-            cursor: pointer;
 
-            &_filled {
-                background-color: #DDDFD4;
+            &_label {
+                display: inline-block;
+
+                svg {
+                    position: relative;
+                    top: 4px;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: transparent;
             }
         }
     }
@@ -1423,7 +1461,7 @@ body {
             }
         }
     }
-}
+} 
 
 @media (max-width: 1203px) {
 
@@ -1670,7 +1708,7 @@ body {
     }
 
     .technologies {
-        height: 807px;
+        height: 880px;
         &_content {
             .title {
                 top: 352px;
@@ -1681,7 +1719,6 @@ body {
 
                 table {
                     td {
-                        padding: 24px 43px 24px 0;
                         a {
                             line-height: 36px;
                         }
@@ -1929,10 +1966,6 @@ body {
             .hr_button {
                 margin-top: 30px;
                 width: 60%;
-
-                svg {
-                    padding-top: 7px;
-                }
             }
         }
     }
@@ -1966,7 +1999,7 @@ body {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 760px) {
 
     .menu_wrapper  {
         display: none;
@@ -2089,23 +2122,28 @@ body {
     }
 
     .counters {
-        height: 413px;
+        height: 409px;
         padding-left: 4%;
     
         &_container {
             align-items: flex-start;
+
             .counter_item {
-                
-                h3 {
-                    font-size: 68px;
-                    line-height: 83px;
-            
+                .counter_row {
+                    // flex-direction: column;
+                    align-items: flex-end;
+
+                    .counter_display {
+                        font-size: 68px;
+                        line-height: 83px;
+                    }
+    
                     .font_tiny {
-                        font-size: 24px;
-                        line-height: 29px;
+                        font-size: 20px;
+                        line-height: 16px;
                     }
                 }
-    
+
                 &_label {
                     font-size: 21px;
                     line-height: 26px;

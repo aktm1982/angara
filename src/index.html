@@ -11,40 +11,44 @@
         <div class="main_corp">
             <div id="menu_wrapper" class="menu_wrapper menu_wrapper_hidden"></div>
             <div id="main_corp_menu" class="main_corp_menu menu_hidden">
-                <div id="menu_close_button" class="cross_sign">
-                    <p>&#10006;</p>
-                </div>
-                <div class="main_corp_menu_list">
-                    <ul>
-                        <li><a href="about.html">о нас</a></li>
-                        <li><a href="production.html">продукция</a></li>
-                        <li><a href="news.html">новости компании</a></li>
-                        <li><a href="machinery.html">оборудование и технологии</a></li>
-                        <li><a href="">контакты</a></li>
-                    </ul>
-                </div>
-                <div class="social-icons">
-                    <div class="social-icons_item">
-                        <a href="#"><img src="../src/assets/images/vk.png"></a>
+                <div class="menu_top">
+                    <div id="menu_close_button" class="cross_sign">
+                        <p>&#10006;</p>
                     </div>
-                    <div class="social-icons_item">
-                        <a href="#"><img src="../src/assets/images/instagram.png"></a>
-                    </div>
-                    <div class="social-icons_item">
-                        <a href="#"><img src="../src/assets/images/twitter.png"></a>
-                    </div>
-                    <div class="social-icons_item">
-                        <a href="#"><img src="../src/assets/images/fb.png"></a>
+                    <div class="main_corp_menu_list">
+                        <ul>
+                            <li><a href="about.html">о нас</a></li>
+                            <li><a href="production.html">продукция</a></li>
+                            <li><a href="news.html">новости компании</a></li>
+                            <li><a href="machinery.html">оборудование и технологии</a></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="lower_row">
-                    <div class="lang">
-                        <button class="button_transparent">Ru</button>|
-                        <button class="button_transparent">Eng</button>|
-                        <button class="button_transparent">China</button>
+                <div class="menu_bottom">
+                    <div class="social-icons">
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/vk.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/instagram.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/twitter.png"></a>
+                        </div>
+                        <div class="social-icons_item">
+                            <a href="#"><img src="../src/assets/images/fb.png"></a>
+                        </div>
                     </div>
-                    <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div> 
-                </div> 
+                    <div class="lower_row">
+                        <div class="lang">
+                            <button class="button_transparent">Ru</button>|
+                            <button class="button_transparent">Eng</button>|
+                            <button class="button_transparent">China</button>
+                        </div>
+                        <div class="callback-order"><a href="tel:+1234567890">Заказать звонок</a></div> 
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="header_content">
@@ -126,12 +130,18 @@
         <div class="counters">
             <div class="counters_container" style="max-width:866px">
                 <div class="counter_item" style="max-width:411px">
-                    <h3><span class="counter_display" data-target-value="310000" data-target-fixed="0">0</span><span class="font_tiny"> м<sup>3</sup></span></h3>
-                    <p class="counter_item_label">сухого пиломатериала</p>
+                    <div class="counter_row">
+                        <div class="counter_display" data-target-value="310000" data-target-fixed="0">0</div>
+                        <div class="font_tiny">м<sup>3</sup></div>
+                    </div>
+                    <div class="counter_item_label">сухого пиломатериала</div>
                 </div>
                 <div class="counter_item" style="max-width:296px">
-                    <h3><span class="counter_display" data-target-value="4.6" data-target-fixed="1">0</span><span class="font_tiny"> млр.руб</span></h3>
-                    <p class="counter_item_label">общие инвестиции</p>
+                    <div class="counter_row">
+                        <div class="counter_display" data-target-value="4.6" data-target-fixed="1">0</div>
+                        <div class="font_tiny">млр.руб.</div>
+                    </div>
+                    <div class="counter_item_label">общие инвестиции</div>
                 </div>
             </div>
         </div>
@@ -581,7 +591,7 @@
                             <h2>новости <span class="filled_blue">компании</span></h2>
                         </div>
                         <div class="news_link">
-                            <a href="#">
+                            <a href="news.html">
                                 Смотреть все
                                 <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.2883 11.5245L3.16294 0.399387C2.90563 0.141869 2.56213 0 2.19588 0C1.82962 0 1.48613 0.141869 1.22881 0.399387L0.409509 1.21849C-0.123617 1.75222 -0.123617 2.61969 0.409509 3.15262L9.75171 12.4948L0.399143 21.8474C0.141828 22.1049 -0.000244141 22.4482 -0.000244141 22.8142C-0.000244141 23.1807 0.141828 23.524 0.399143 23.7817L1.21845 24.6006C1.47596 24.8581 1.81925 25 2.18551 25C2.55177 25 2.89526 24.8581 3.15258 24.6006L14.2883 13.4653C14.5462 13.207 14.6878 12.8621 14.687 12.4954C14.6878 12.1273 14.5462 11.7826 14.2883 11.5245Z" fill="#4975A5"/>
@@ -680,17 +690,23 @@
                         </form>
                     </div>
                     <div class="callback_hr">
-                        <button id="hr_responce_callback" class="hr_button hr_button_filled">Социальная ответственность
-                            <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M44.6657 9.65973L35.3406 0.334763C35.1249 0.118913 34.837 0 34.53 0C34.223 0 33.9351 0.118913 33.7194 0.334763L33.0327 1.02132C32.5858 1.4687 32.5858 2.1958 33.0327 2.6425L40.8632 10.473L33.024 18.3123C32.8083 18.5281 32.6892 18.8159 32.6892 19.1227C32.6892 19.4299 32.8083 19.7176 33.024 19.9336L33.7107 20.62C33.9266 20.8359 34.2143 20.9548 34.5213 20.9548C34.8283 20.9548 35.1162 20.8359 35.3319 20.62L44.6657 11.2865C44.8819 11.07 45.0006 10.7809 45 10.4736C45.0006 10.165 44.8819 9.87609 44.6657 9.65973Z" fill="#5B5B5B"/>
-                                <path d="M41.0714 10.8965H0" stroke="#5B5B5B" stroke-width="3"/>
-                            </svg>  
+                        <button id="hr_responce_callback" class="hr_button">
+                            <div class="hr_button_label">Социальная&ensp;</div> 
+                            <div class="hr_button_label">ответственность&ensp;
+                                <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6657 9.65973L35.3406 0.334763C35.1249 0.118913 34.837 0 34.53 0C34.223 0 33.9351 0.118913 33.7194 0.334763L33.0327 1.02132C32.5858 1.4687 32.5858 2.1958 33.0327 2.6425L40.8632 10.473L33.024 18.3123C32.8083 18.5281 32.6892 18.8159 32.6892 19.1227C32.6892 19.4299 32.8083 19.7176 33.024 19.9336L33.7107 20.62C33.9266 20.8359 34.2143 20.9548 34.5213 20.9548C34.8283 20.9548 35.1162 20.8359 35.3319 20.62L44.6657 11.2865C44.8819 11.07 45.0006 10.7809 45 10.4736C45.0006 10.165 44.8819 9.87609 44.6657 9.65973Z" fill="#5B5B5B"/>
+                                    <path d="M41.0714 10.8965H0" stroke="#5B5B5B" stroke-width="3"/>
+                                </svg> 
+                            </div> 
                         </button>
-                        <button id="hr_job_callback" class="hr_button">Работа в ангар-лес
-                            <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M44.6657 9.65973L35.3406 0.334763C35.1249 0.118913 34.837 0 34.53 0C34.223 0 33.9351 0.118913 33.7194 0.334763L33.0327 1.02132C32.5858 1.4687 32.5858 2.1958 33.0327 2.6425L40.8632 10.473L33.024 18.3123C32.8083 18.5281 32.6892 18.8159 32.6892 19.1227C32.6892 19.4299 32.8083 19.7176 33.024 19.9336L33.7107 20.62C33.9266 20.8359 34.2143 20.9548 34.5213 20.9548C34.8283 20.9548 35.1162 20.8359 35.3319 20.62L44.6657 11.2865C44.8819 11.07 45.0006 10.7809 45 10.4736C45.0006 10.165 44.8819 9.87609 44.6657 9.65973Z" fill="#5B5B5B"/>
-                                <path d="M41.0714 10.8965H0" stroke="#5B5B5B" stroke-width="3"/>
-                            </svg>  
+                        <button id="hr_job_callback" class="hr_button">
+                            <div class="hr_button_label">Работа в&ensp;</div>
+                            <div class="hr_button_label">ангара-лес&ensp;
+                                <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6657 9.65973L35.3406 0.334763C35.1249 0.118913 34.837 0 34.53 0C34.223 0 33.9351 0.118913 33.7194 0.334763L33.0327 1.02132C32.5858 1.4687 32.5858 2.1958 33.0327 2.6425L40.8632 10.473L33.024 18.3123C32.8083 18.5281 32.6892 18.8159 32.6892 19.1227C32.6892 19.4299 32.8083 19.7176 33.024 19.9336L33.7107 20.62C33.9266 20.8359 34.2143 20.9548 34.5213 20.9548C34.8283 20.9548 35.1162 20.8359 35.3319 20.62L44.6657 11.2865C44.8819 11.07 45.0006 10.7809 45 10.4736C45.0006 10.165 44.8819 9.87609 44.6657 9.65973Z" fill="#5B5B5B"/>
+                                    <path d="M41.0714 10.8965H0" stroke="#5B5B5B" stroke-width="3"/>
+                                </svg> 
+                            </div>
                         </button>
                     </div>
                 </div>

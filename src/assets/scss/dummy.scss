@@ -116,6 +116,7 @@
 
         .marker-cell {
             position: relative;
+            width: 108px;
 
             .marker {
                 position: absolute;
@@ -233,6 +234,13 @@
     
         &_list {
             width: 100%;
+            padding-bottom: 32px;
+
+            table {
+                tr {
+                    padding-bottom: 24px;
+                }
+            }
         }
     }
 
@@ -259,7 +267,7 @@
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 760px) {
 
     .header_dummy {
 
@@ -313,6 +321,7 @@
 
         &_content {
             padding-top: 46px;
+            font-size: 17px;
         }
     }
 

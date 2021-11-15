@@ -42,6 +42,10 @@ const plugins = () => {
             filename: 'machinery.html',
             template: path.resolve(__dirname, './src/machinery.html')
         }),
+        new HtmlWebpackPlugin({
+            filename: 'social_politic.html',
+            template: './src/social_politic.html'
+        }),
         new MiniCssExtractPlugin({
             filename: `./css/${filename('css')}`
         }),

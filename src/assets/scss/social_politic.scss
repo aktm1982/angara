@@ -1,15 +1,17 @@
 @import 'colors_map.scss';
 
 .title-generic_social_politic {
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%),
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),
     url(../images/social-politic/bg.jpg) center/cover no-repeat;
 
     .title-generic_content {
+        padding-top: 119px;
         h2 {
             font-size: 57px;
         }
         .reflection {
-            font-size: 114px;;
+            font-size: 114px;
+            line-height: 153px;
         }
     }
 }
@@ -22,8 +24,10 @@
         justify-content: space-between;
 
         .image {
+            width: 380px;
+
             img {
-                width: 380px;
+                width: 100%;
             }
 
             .label {
@@ -67,8 +71,17 @@
 
 .forest-guard {
     height: 1180px;
-    background: url(../images/social-politic/forest_guard.jpg) center/cover no-repeat, 
-        linear-gradient(180deg, #F5F5F5 50%, transparent 50%);
+    background: #F5F5F5;
+    position: relative;
+
+    .bg-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url(../images/social-politic/forest_guard.jpg) center/cover no-repeat;
+        height: 635px;
+        width: 100%;
+    }
 
     &_content {
         padding-top: 98px;
@@ -78,6 +91,7 @@
             position: absolute;
             top: 526px;
             left: -417px;    
+            color: $common_white;
             transform: rotate(-90deg);
 
             h2 {
@@ -91,7 +105,7 @@
         }
 
         .text {
-            padding-left: 207px;
+            padding-left: 200px;
 
             h3 {
                 font-weight: bold;
@@ -113,11 +127,184 @@
                 color: $common_black;
             }
         }
+
+        .special_content {
+            position: absolute;
+            top: 448px;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 406px;
+        }
+    }
+}
+
+@media (max-width: 1203px) {
+    .title-generic_social_politic {
+        .title-generic_content {
+            h2 {
+                font-size: 47px;
+                line-height: 62px;
+            }
+        }
+    }
+    .personal-comment_content {
+        padding-top: 89px;
+        flex-direction: column;
+        align-items: center;
+
+        .text {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
 
-    .special_content {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 382px;
+    .forest-guard {
+        height: 1320px;
+    
+        &_content {
+            padding-top: 68px;
+            .title {
+                top: 500px;
+            }
+    
+            .text {
+                width: 95%;
+                h3 {
+                    font-size: 50px;
+                    line-height: 80px;
+                }
+            }
+    
+            .special_content {
+                top: 710px;
+                left: 0;
+                justify-content: flex-start;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 760px) {
+    .title-generic_social_politic {
+        .title-generic_content {
+            overflow: hidden;
+            h2 {
+                font-size: 32px;
+                line-height: 45px;
+            }
+        }
+    }
+
+    .local-jobs_content {
+        h3 {
+            padding-bottom: 55px;
+        }
+    }
+
+    .local-jobs_list {
+        td {
+            padding-bottom: 24px;
+        }
+        .marker-cell {
+            width: 81px;
+        }
+    }
+
+    .personal-comment {
+    
+        &_content {
+            padding-top: 59px;
+            padding-bottom: 23px;
+    
+            .image {
+                max-width: 82%;
+                margin: auto;
+
+                .label {
+                    h2 {
+                        font-size: 24px;
+                    }
+    
+                    h3 {
+                        font-size: 16px;
+                        padding-top: 6px;
+                    }
+                }
+            }
+
+            .text {
+                padding: 37px 7px 0 7px;
+    
+                .design-quotes {
+                    padding-bottom: 26px;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 24px;
+                } 
+            }
+        }
+    }
+
+    .forest-guard {
+        height: 1587px;
+
+        &_content {
+            padding-top: 14px;
+
+            .title {
+                left: -367px;
+                top: 473px;
+                width: 780px;
+                h2 {
+                    font-size: 59px;
+                    line-height: 60px;
+                }
+            }
+    
+            .text {
+                padding-left: 12px;
+                padding-right: 12px;
+    
+                h3 {
+                    position: relative;
+                    left: -11px;
+                    font-size: 33px;
+                    line-height: 96px;
+                }
+    
+                p {
+                    padding-left: 50px;
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+            }
+
+            .special_content {
+                top: 763px;
+                left: 8px;
+                &_stroked {
+                    font-size: 147px;
+                    line-height: 108px;
+                }
+
+                &_measure {
+                    .stroked_small {
+                        font-size: 65px;
+                        line-height: 52px;
+                    }
+
+                    .label {
+                        position: relative;
+                        top: 62px;
+                        left: -242px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }
