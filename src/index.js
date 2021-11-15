@@ -67,13 +67,13 @@ window.onload = () => {
 
     window.addEventListener('scroll', counterHandler); 
 
-    const animatedBlocks = document.querySelectorAll(".animated");
+    // const animatedBlocks = document.querySelectorAll(".animated");
 
-    const animateVisibility = (elt) => {
-        if (elt.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
-            elt.style.opacity = 1;
-        }
-    }
+    // const animateVisibility = (elt) => {
+    //     if (elt.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
+    //         elt.style.opacity = 1;
+    //     }
+    // }
 
-    window.onscroll = () => animatedBlocks.forEach(animateVisibility);
+    // window.onscroll = () => animatedBlocks.forEach(animateVisibility);
 }
