@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import 'colors_map.scss';
 
-.header_dummy {
+.main_corp_dummy {
     height: 1080px;
+    
+    .dummy_content {
+        position: absolute;
+        top: -14px;
+        right: 0;
+        width: 706px;
+    
+        h2 {
+            font-weight: bold;
+            font-size: 70px;
+            line-height: 78px;
+            text-transform: uppercase;
+            color: $common_white;
+    
+            .filled_blue {
+                font-size: 72px;
+            }
+        }
 
-    .header_content {
         .company-name {
             left: -221px;
     
@@ -13,67 +30,49 @@
             }
         }
     
-        .dummy_content {
-            position: absolute;
-            top: -14px;
-            right: 0;
-            width: 706px;
+        .dummy_callback_label {
+            padding-top: 23px;
+            font-family: Akrobat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 47px;
+            line-height: 57px;
+            text-transform: uppercase;
+            color: $common_white;
+        }
+    
+        .callback {
+            padding-top: 39px;
+            &_form {
+    
+                .input_block {
+                    padding-bottom: 34px;
+    
+                    label {
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-transform: none;
+                        color: $common_white;
+                    }
         
-            h2 {
-                font-weight: bold;
-                font-size: 70px;
-                line-height: 78px;
-                text-transform: uppercase;
-                color: $common_white;
-        
-                .filled_blue {
-                    font-size: 72px;
+                    input {
+                        width: 85%;
+                        color: $common_white;
+
+                        &::placeholder {
+                            color: $common_white;
+                        }
+                    }
                 }
-            }
-        
-            .dummy_callback_label {
-                padding-top: 23px;
-                font-family: Akrobat;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 47px;
-                line-height: 57px;
-                text-transform: uppercase;
-                color: $common_white;
-            }
-        
-            .callback {
-                padding-top: 39px;
-                &_form {
-        
-                    .input_block {
-                        padding-bottom: 34px;
-        
-                        label {
-                            font-size: 14px;
-                            line-height: 17px;
-                            text-transform: none;
-                            color: $common_white;
-                        }
-            
-                        input {
-                            width: 85%;
-                            color: $common_white;
 
-                            &::placeholder {
-                                color: $common_white;
-                            }
-                        }
-                    }
-
-                    button {
-                        margin-top: 30px;
-                        width: 289px;
-                    }
+                button {
+                    margin-top: 30px;
+                    width: 289px;
                 }
             }
         }
-    }    
+    }
+   
 }
 
 .local-jobs {
@@ -184,8 +183,45 @@
 
 @media (max-width: 1203px) {
 
-    .header_dummy {
+    .main_corp_dummy {
         height: 921px;
+
+        .header_content {
+            padding-bottom: 84px;
+        }
+
+        .main_corp_content {
+            .company-name {
+                top: 272px;
+            }
+        }
+
+        .dummy_content {
+            width: 560px;
+            h2 {
+                width: 571px;
+                font-size: 56px;
+                line-height: 69px; 
+
+                .filled_blue {
+                    font-size: 60px;
+                }
+            }
+
+            .dummy_callback_label {
+                font-size: 39px;
+                line-height: 52px;
+            }
+
+            .callback {
+
+                &_form {
+                    margin-left: 0;
+                    margin-right: auto;
+                    max-width: 96%;
+                }
+            }
+        }
 
         .header_prolog {
             padding-bottom: 86px;
@@ -269,7 +305,50 @@
 
 @media (max-width: 760px) {
 
-    .header_dummy {
+    .main_corp_dummy {
+
+        .main_corp_content {
+            .company-name {
+                display: none;
+            }
+
+            .dummy_content {
+                position: relative;
+                max-width: 351px;
+                margin: auto;
+                h2 {
+                    width: 101%;
+                    font-size: 35px;
+                    line-height: 40px;
+
+                    .filled_blue {
+                        font-size: 43px;
+                        line-height: 40px;
+                    }
+                }
+
+                .callback {
+                    padding-top: 6px;
+                }
+
+                .dummy_callback_label {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+
+                .callback_form {
+                    .input_block {
+                        input {
+                            width: 102%;
+                        }
+                    }
+
+                    .button_dark {
+                        width: 349px;
+                    }
+                }
+            }
+        }
 
         .header_prolog {
             padding-bottom: 83px;
@@ -290,8 +369,21 @@
         }
     
         .header_content {
+            padding-top: 30px;
+            .logo {
+                padding-top: 4px;
+                max-width: 180px;
+            }
+
             .company-name {
                 display: none;
+            }
+
+            .company-description {
+                .activities {
+                    padding-top: 0;
+                    width: 154px;
+                }
             }
         
             .dummy_content {
@@ -314,7 +406,19 @@
                     line-height: 38px;
                 }
             }
-        }    
+        } 
+        
+        .dummy_content {
+            .callback {
+                padding-top: 6px;
+            }
+
+            .callback_form {
+                .button_dark {
+                    width: 349px;
+                }
+            }
+        }
     }
 
     .local-jobs {
@@ -326,12 +430,17 @@
     }
 
     .footer_dummy {
-        height: 438px;
+        height: 450px;
         padding-top: 46px;
+        padding-bottom: 24px;;
     
         &_content {
-    
+            width: 97%;
+            margin: auto;
+            
             h2 {
+                width: 66%;
+                margin: auto;
                 font-size: 33px;
                 line-height: 43px;
             }
