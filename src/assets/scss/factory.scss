@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import 'colors_map.scss';
+
+.title-generic_factory {
+    background: url(../images/factory/буклет\ 2021-01.jpg) center/cover no-repeat;
+
+    .title-generic_content {
+        .reflection {
+            font-size: 181px;
+        }
+    }
+}
+
+.region-factory {
+    padding: 122px 0 82px;
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        .col-2 {
+            width: 47%;
+            .text {
+                color: #454545;
+
+                .title {
+                    padding-bottom: 29px;
+                    h2 {
+                        font-weight: bold;
+                        font-size: 55px;
+                        line-height: 70px;
+                        text-transform: uppercase;
+
+                        .filled_green {
+                            color: #09712D;
+                        }
+                    }
+                }
+
+                p {
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 28px;
+                    padding-bottom: 27px;
+                }
+            }
+
+            .image {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.construction-poster {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), 
+        url(../images/factory/f_bWludnIucnUvdXBsb2FkL2libG9jay82ZGIvYmxvYmlkMTU5MTA3OTI3NzU2My5qcGc_X19pZD0xMzMwNjc=.jpg) center/cover no-repeat;
+    
+    &_content {
+        height: 562px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 60px;
+        .title {
+            h2 {
+                font-weight: bold;
+                font-size: 55px;
+                line-height: 70px;
+                text-transform: uppercase;
+                text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+            }
+        }
+    }
+}
+
+.personal-comment_factory {
+    .personal-comment_content {
+        .image {
+            width: 25%;
+
+            img {
+                width: 98%;
+            }
+
+            .label {
+                h2 {
+                    font-size: 23px;
+                    line-height: 24px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .text {
+            width: 59%;
+            padding-left: 0;
+        }
+    }
+}
+
+.krasnoyarsk-region {
+    background: url(../images/factory/буклет\ 2021\ финал-02.jpg) left top 123%/56% no-repeat, #022a22;
+    padding: 119px 0 109px;
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        .col-2 {
+            width: 44%;
+            .title {
+                h2 {
+                    font-weight: bold;
+                    font-size: 55px;
+                    line-height: 70px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .info-data {
+                padding-right: 40px;
+                padding-left: 40px;
+                &_block {
+                    padding-bottom: 30px;
+                    .data_small {
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-transform: uppercase;
+                    }
+
+                    .data_big {
+                        font-weight: bold;
+                        font-size: 49px;
+                        line-height: 60px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gallery-block_factory {
+    padding: 99px 0 121px;
+    .title {
+        h2 {
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 80px;
+            text-transform: uppercase;
+            color: #4975A5;
+        }
+    }
+
+    .gallery-block_content {
+        padding-top: 49px;
+    }
+
+    .pagination {
+        padding-top: 31px;
+        svg {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.publications_factory {
+    padding: 62px 0 43px;
+    background: #F5F5F5;
+    .publications_content {
+        .title {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1203px) {
+    .title-generic_factory {
+        .title-generic_content {
+            h2 {
+                font-size: 54px;
+                line-height: 142px;
+            }
+        }
+    }
+
+    .region-factory {
+        padding-top: 71px;
+        min-height: 738px;
+        &_content {
+            .col-2 {
+                .text {
+                    .title {
+                        width: 720px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                        padding-bottom: 19px;
+                    }
+                }
+
+                .image {
+                    transform: translate(0, 173px);
+                    max-width: 365px;
+                }
+            }
+        }
+    }
+
+    .construction-poster {
+        &_content {
+            .title {
+                max-width: 616px;
+                h2 {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+
+    .personal-comment_factory {
+        .personal-comment_content {
+            padding-bottom: 0;
+            .image {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 38%;
+
+                .label {
+                    width: 332px;
+                }
+            }
+
+            .text {
+                width: 97%;
+                transform: translate(0, -47px);
+            }
+        }
+    }
+
+    .krasnoyarsk-region {
+        background: url(../images/factory/буклет\ 2021\ финал-02.jpg) left -247px top 200px/669px no-repeat,#022a22;
+        padding: 72px 0 49px;
+        &_content {
+            flex-direction: column;
+            .col-2 {
+                width: 100%;
+                .title {
+                    width: 562px;
+                    h2 {
+                        font-size: 50px;
+                        line-height: 60px;
+                    }
+                }
+
+                .info-data {
+                    padding-left: 34%;
+                    padding-top: 29px;
+                }
+            }
+        }
+    }
+
+    .gallery-block_factory {
+        padding: 67px 0 78px;
+        .title {
+            h2 {
+                font-size: 50px;
+                line-height: 80px;
+            }
+        }
+
+        .gallery-block_content {
+            padding-top: 28px;
+        }
+    }
+
+    .publications_factory {
+        .publications_content {
+            padding-top: 14px;
+            padding-bottom: 0;
+            .title {
+                max-width: 413px;
+                margin-left: 0;
+                margin-right: auto;
+                h2 {
+                    text-align: left;
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+            }
+
+            .publications_block {
+                .publication_item {
+                    padding: 0;
+                    width: 49%;
+                    padding-bottom: 42px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .title-generic_factory {
+        .title-generic_content {
+            
+            h2 {
+                margin: auto;
+                max-width: 474px;
+                font-size: 38px;
+                line-height: 48px;
+                text-align: center;
+                text-transform: upperca
+            }
+        }
+    }
+
+
+    .region-factory {
+        padding-top: 60px;
+
+        &_content {
+            flex-direction: column;
+            .col-2 {
+                width: 98%;
+                margin: auto;
+                .text {
+                    .title {
+                        max-width: 100%;
+                        h2 {
+                            font-size: 33px;
+                            line-height: 43px;
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .image {
+                    padding-top: 21px;
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    .construction-poster_content {
+        .title {
+            h2 {
+                font-size: 33px;
+                line-height: 43px;
+            }
+        }
+    }
+
+    .personal-comment_factory {
+        .personal-comment_content {
+            padding-bottom: 32px;
+            .image {
+                width: 100%;
+            }
+
+            .text {
+                transform: none;
+                padding-top: 18px;
+
+                p {
+                    padding-bottom: 19px;
+                }
+
+                .design-quotes {
+                    padding-bottom: 14px;
+                    svg {
+                        transform: scale(0.7) translate(-15px);
+                    }
+                }
+            }
+        }
+    }
+
+    .krasnoyarsk-region {
+        background: url(../images/factory/буклет\ 2021\ финал-02.jpg) left -59px top -67px/502px no-repeat,#022a22;
+
+        &_content {
+
+            .col-2 {
+                .title {
+                    width: 336px;
+                    h2 {
+                        font-size: 33px;
+                        line-height: 43px;
+                    }
+                }
+    
+                .info-data {
+                    padding-left: 0;
+    
+                    &_block {
+                        .data_big {
+                            font-size: 38px;
+                            line-height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .gallery-block_factory {
+        padding: 32px 0 52px;
+
+
+        .gallery-block_content {
+            padding-top: 49px;
+        }
+
+        .title {
+            h2 {
+                font-size: 33px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+        .pagination {
+            padding-top:23px;
+        }
+    }
+
+    .publications_factory {
+        .publications_content {
+            padding-top: 0;
+            .title {
+                h2 {
+                    font-size: 33px;
+                    line-height: 43px;
+                    text-align: center;
+                }
+            }
+
+            .publications_block {
+                .publication_item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    
+}

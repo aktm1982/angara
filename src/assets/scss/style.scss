@@ -26,7 +26,7 @@ body {
 
 .animated {
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .menu_wrapper {
@@ -410,7 +410,6 @@ body {
             font-weight: bold;
             font-size: 135px;
             line-height: 142px;
-            text-align: center;
             text-transform: uppercase;
             color: transparent;
             opacity: 0.3;
@@ -2636,7 +2635,6 @@ body {
 
             .reflection {
                 white-space: nowrap;
-                text-align: center;
                 font-size: 135px;
             }
         }

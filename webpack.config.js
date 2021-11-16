@@ -61,6 +61,10 @@ module.exports = {
             filename: 'social_politic.html',
             template: './src/social_politic.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'factory.html',
+            template: './src/factory.html'
+        }),
         new MiniCssExtractPlugin({
             filename: 'index.css'
         })
