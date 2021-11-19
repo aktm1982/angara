@@ -48,7 +48,7 @@ const plugins = () => {
         }),
         new HtmlWebpackPlugin({
             filename: 'factory.html',
-            template: './src/factory.html'
+            template: path.resolve(__dirname, './src/factory.html')
         }),
         new MiniCssExtractPlugin({
             filename: `./css/${filename('css')}`
