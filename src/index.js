@@ -8,6 +8,7 @@ import './assets/scss/social_politic.scss'
 import './assets/scss/about.scss'
 import './assets/js/swiper'
 import './assets/js/maskIpnut'
+import './assets/scss/factory.scss'
 
 window.onload = () => {
     const menuCloseButton = document.getElementById("menu_close_button");
