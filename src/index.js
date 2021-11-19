@@ -55,12 +55,12 @@ window.onload = () => {
             }
         }
 
-        animate();  
+        animate();
     }
     
     if (counterDisplays) {
         const counterHandler = () => {
-            if (counterBox.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
+            if (counterBox.offsetTop < (window.scrollY + window.innerHeight * 0.6)) {
                 window.removeEventListener('scroll', counterHandler);
                 counterDisplays.forEach(elt => {
                     animateIncrease(elt);
@@ -68,13 +68,14 @@ window.onload = () => {
             }
         }
 
-    // const animatedBlocks = document.querySelectorAll(".animated");
+        // const animatedBlocks = document.querySelectorAll(".animated");
 
-    // const animateVisibility = (elt) => {
-    //     if (elt.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
-    //         elt.style.opacity = 1;
-    //     }
-    // }
+        // const animateVisibility = (elt) => {
+        //     if (elt.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {
+        //         elt.style.opacity = 1;
+        //     }
+        // }
 
-    // window.onscroll = () => animatedBlocks.forEach(animateVisibility);
+        // window.onscroll = () => animatedBlocks.forEach(animateVisibility);
+    }
 }
