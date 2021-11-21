@@ -29,6 +29,18 @@ body {
     transition: all 0.5s;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 100;
+    width: 100%;
+}
+
+.header--scroll{
+    background-color: #333;
+}
+
 .menu_wrapper {
     display: none;
     position: fixed;
@@ -424,6 +436,7 @@ body {
     background: url('../images/index/dan-otis-OYFHT4X5isg-unsplash(2) 1.png') center/cover no-repeat;
     mix-blend-mode: multiply;
     height: 921px; 
+    padding-top: 150px;
 
     color: $common_white;   
     
@@ -895,7 +908,7 @@ body {
 
     &_title {
         position: absolute;
-        z-index: 200;
+        z-index: 20;
         top: 122px;
         width: 890px;
 
@@ -913,7 +926,7 @@ body {
 
     &_content {
         position: absolute;
-        z-index: 100;
+        z-index: 10;
         top: 274px;
         height: 1367px;
         width: 1214px;
@@ -1464,6 +1477,7 @@ body {
 
 @media (max-width: 1203px) {
 
+
     .main_corp_menu {
         padding-left: 26px;
 
@@ -1481,8 +1495,8 @@ body {
     }
 
     .container {
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .header {  
@@ -1512,7 +1526,7 @@ body {
         
         &_content {
             .company-name {
-                top: 164px;
+                top: 250px;
                 left: -307px;
     
                 h1 {
@@ -1729,9 +1743,15 @@ body {
 
     .production {
         height: 1478px;
+
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
         &_title {
             top: 42px;
             width: 680px;
+            padding-left: 15px;
             h2 {
                 font-size: 50px;
             }
@@ -1747,10 +1767,12 @@ body {
             .slider_box {
                 position: relative;
                 top: 270px;
+                padding-right: 15px;
             }
 
             table {
                 padding-top: 342px;
+                padding-left: 15px;
 
                 td {
                     max-width: 100%;
@@ -1833,10 +1855,10 @@ body {
 
     .rewards {
         height: 350px;
-        padding: 111px 0;
+        // padding: 111px 0;
     
         &_container {
-            max-width: 635px;
+            // max-width: 635px;
         }
     }
 
@@ -2066,6 +2088,7 @@ body {
                 top: 0;
                 right: 0;
                 width: 366px;
+                padding-left: 15px;
     
                 h2 {
                     font-size: 43px;
@@ -2091,6 +2114,7 @@ body {
     .slider_box {
         .slider_index {
             font-size: 198px;
+            padding-right: 15px;
         }
     }
 
@@ -2215,6 +2239,7 @@ body {
             }
             .starting_date {
                 width: 368px;
+                padding-left: 15px;
                 h2 {
                     font-size: 52px;
                     line-height: 72px;
@@ -2332,10 +2357,15 @@ body {
     }
 
     .production {
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+        }
         height: 2205px;
         &_title {
             top: 79px;
             width: 330px;
+            padding-left: 15px;
             h2 {
                 font-size: 33px;
                 line-height: 43px;
@@ -2360,6 +2390,7 @@ body {
 
             table {
             padding-top: 235px;
+            padding-left: 15px;
 
                 .product_image {
                     padding-top: 17px;
@@ -2369,6 +2400,10 @@ body {
                 .product_name {
                     top: -4px;
                     padding-left: 0;
+
+                    h3{
+                        font-size: 29px;
+                    }
                 }
 
                 .product_name_right {
@@ -2403,6 +2438,11 @@ body {
 
     .projects {
         &_content {
+            .list{
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 45px;
+            }
             .title {
                 padding-top: 83px;
                 max-width: 429px;
@@ -2507,7 +2547,7 @@ body {
 
     .saving-forest {
         &_container {
-            max-width: 399px;
+            max-width: 375px;
             h2 {
                 padding-top: 110px;
                 font-size: 41px;
@@ -2516,6 +2556,7 @@ body {
 
             .special_content {
                 padding-top: 43px;
+                padding-left: 15px;
                 &_stroked {
                     font-size: 147px;
                     line-height: 103px;
