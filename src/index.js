@@ -10,6 +10,7 @@ import './assets/js/swiper'
 import './assets/js/maskIpnut'
 import './assets/scss/factory.scss'
 import './assets/js/menuScroll'
+import './assets/js/counterAnimation'
 
 window.onload = () => {
     const menuCloseButton = document.getElementById("menu_close_button");
@@ -41,15 +42,18 @@ window.onload = () => {
 
     const animateIncrease = (elt, animationStep = 0) => {
         const targetValue = elt.dataset.targetValue;
+        console.log(elt, targetValue);
         const targetFixed = elt.dataset.targetFixed;
         const increaseValue = targetValue / (animationTime / animationSpeed);
+        console.log(increaseValue);
 
         const getCurrentValue = (animationStep) => animationStep * increaseValue;
 
         const animate = () => {
             elt.innerText = getCurrentValue(animationStep).toFixed(targetFixed).replace('.', ',');
+            console.log(elt.innerText, +targetValue);
             animationStep++;
-            if (elt.innerText < targetValue) {
+            if (elt.innerText < +targetValue || elt.innerText < targetValue) {
                 requestAnimationFrame(animate);
             } else {
                 elt.innerText = targetValue.replace('.', ',');
@@ -59,15 +63,17 @@ window.onload = () => {
         animate();
     }
     
-    if (counterDisplays) {
-        const counterHandler = () => {
-            if (counterBox.offsetTop < (window.scrollY + window.innerHeight * 0.6)) {
-                window.removeEventListener('scroll', counterHandler);
-                counterDisplays.forEach(elt => {
-                    animateIncrease(elt);
-                });
-            }
+    const counterHandler = () => {
+        if (counterBox.offsetTop < ( window.scrollY + window.innerHeight * 0.6)) {            
+            counterDisplays.forEach(elt => {
+                animateIncrease(elt);
+            });
+            window.removeEventListener('scroll', counterHandler);
         }
+    }
+
+    window.addEventListener('scroll', counterHandler); 
+    
 
         // const animatedBlocks = document.querySelectorAll(".animated");
 
@@ -78,5 +84,5 @@ window.onload = () => {
         // }
 
         // window.onscroll = () => animatedBlocks.forEach(animateVisibility);
-    }
+    
 }
