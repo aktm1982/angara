@@ -154,6 +154,10 @@ header{
 
 .header {
     background: $corp_gray-color;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .header_content {
