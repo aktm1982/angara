@@ -10,7 +10,6 @@ import './assets/js/swiper'
 import './assets/js/maskIpnut'
 import './assets/scss/factory.scss'
 import './assets/js/menuScroll'
-import './assets/js/counterAnimation'
 
 window.onload = () => {
     const menuCloseButton = document.getElementById("menu_close_button");
