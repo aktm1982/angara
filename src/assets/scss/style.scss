@@ -278,6 +278,9 @@ header{
 
 .button_colored {
     background: $corp_blue_lite-color;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
     width: 100%;
     margin-bottom: 25px;
     padding: 21px;
@@ -442,7 +445,11 @@ header{
     height: 921px; 
     padding-top: 150px;
 
-    color: $common_white;   
+    color: $common_white;  
+    
+    &_dummy{
+        padding-top: 0;
+    }
     
     .header_content {
         padding-top: 52px;

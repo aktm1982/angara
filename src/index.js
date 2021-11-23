@@ -7,11 +7,12 @@ import './assets/scss/machinery.scss'
 import './assets/scss/social_politic.scss'
 import './assets/scss/about.scss'
 import './assets/js/swiper'
-import './assets/js/maskIpnut'
+import './assets/js/maskInput'
 import './assets/scss/factory.scss'
 import './assets/js/menuScroll'
+import './assets/js/sendForm'
 
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
     const menuCloseButton = document.getElementById("menu_close_button");
     const menuOpenButton = document.getElementById("menu_open_button");
     const menuWrapper = document.getElementById("menu_wrapper");
@@ -84,4 +85,4 @@ window.onload = () => {
 
         // window.onscroll = () => animatedBlocks.forEach(animateVisibility);
     
-}
+})
